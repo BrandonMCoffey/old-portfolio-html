@@ -19,55 +19,57 @@
     
 <div class="w3-border">
     <div class="w3-bar w3-theme">
-      <button class="w3-button testbtn w3-padding-16" onclick="openCity(event,'DEMO')">Demo Reel</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openCity(event,'VE')">Virtual Environments</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openCity(event,'CT')">Coding & Tools</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openCity(event,'GD')">Game Development</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'DEMO')">Demo Reel</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'CT')">Coding & Tools</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
     </div>
     
-    <div id="DEMO" class="w3-container city">
-        <h2>Demo Reel</h2>
-        <video controls style="width:85%">
-            <source src="Assets/Portal_Demo_01.mp4" type="video/mp4" alt="Portal Demo Video">
-        </video>
+    <!-- Demo Reel -->
+    <div id="DEMO" class="w3-container page">
+      <h2>Demo Reel</h2>
+      <video controls style="width:85%">
+        <source src="Assets/Demo_Reel.mp4" type="video/mp4" alt="Portal Demo Video">
+      </video>
     </div>
     
-    <div id="VE" class="w3-container city">
-        <h2>Virtual Environments</h2>
-        <img src="Assets/Environment_01_Key.png" alt="Virutal Environments 01" style="width:85%">
+    <!-- Virtual Environments -->
+    <div id="VE" class="w3-container page">
+      <h2>Virtual Environments</h2>
+      <img src="Assets/Environment_01_Key.png" alt="Virutal Environments 01" style="width:85%">
 
-        <hr>
-        <h2 class="w3-center">Accordions</h2>
-        <button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 1</button>
-        <div id="Demo1" class="w3-hide">
+      <hr>
+      <h2 class="w3-center">Other Work</h2>
+      <button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Work 1</button>
+      <div id="Demo1" class="w3-hide">
         <div class="w3-container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Work 1</p>
         </div>
-        </div>
-        <button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 2</button>
-        <div id="Demo2" class="w3-hide">
-        <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
-        <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
-        <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
-        </div>
-        <button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 3</button>
-        <div id="Demo3" class="w3-hide w3-black">
+      </div>
+
+      <button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Work 2</button>
+      <div id="Demo2" class="w3-hide">
+        <p>Work 2</p>
+      </div>
+
+      <button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Work 3</button>
+      <div id="Demo3" class="w3-hide w3-black">
         <div class="w3-container">
-            <p>Accordion with Images:</p>
-            <img src="img_snowtops.jpg" style="width:30%;" class="w3-animate-zoom">
-            <p>French Alps</p>
+          <p>Work 2</p>
         </div>
-        </div>
+      </div>
     </div>
     
-    <div id="CT" class="w3-container city">
+    <!-- Coding and Tools -->
+    <div id="CT" class="w3-container page">
       <h2>Coding & Tools</h2>
       <video controls style="width:85%">
         <source src="Assets/Portal_Demo_01.mp4" type="video/mp4" alt="Portal Demo Video">
       </video>
     </div>
     
-    <div id="GD" class="w3-container city">
+    <!-- Game Development -->
+    <div id="GD" class="w3-container page">
       <h2>Game Development</h2>
       <img src="Assets/Environment_01_Key.png" alt="Virutal Environments 01" style="width:85%">
       <div class="w3-half">
@@ -75,10 +77,10 @@
       </div>
       <div class="w3-half">
         <ul class="w3-ul w3-border w3-hoverable">
-            <li class="w3-theme">Jill</li>
-            <li>Eve</li>
-            <li>Adam</li>
-            <li>Steve</li>
+            <li class="w3-theme">Fellow Teammates</li>
+            <li>Bill Dang</li>
+            <li>Noah Sims</li>
+            <li>Cameron Meyer</li>
         </ul>
         </div>
     </div>
@@ -88,22 +90,20 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-16">
-  <h3>Footer</h3>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+  <h3>Brandon Coffey</h3>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right"> 
     <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
-  <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme-light" target="_blank">W3.CSS Reference</a></p>
+  <p>Contact at <a href="mailto: bmc939@gmail.com" target="_blank">bmc939@gmail.com</a></p>
 </footer>
 
-<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<!-- Script for Sidebar, Tabs, Accordions, and slideshows -->
 <script>
 // Tabs
-function openCity(evt, cityName) {
+function openPage(evt, pageName) {
   var i;
-  var x = document.getElementsByClassName("city");
+  var x = document.getElementsByClassName("page");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -111,7 +111,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < x.length; i++) {
     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(pageName).style.display = "block";
   evt.currentTarget.className += " w3-dark-grey";
 }
 
@@ -147,22 +147,6 @@ function showDivs(n) {
 }
 
 showDivs(1);
-
-// Progress Bars
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 5;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width == 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
 </script>
 
 </body>
