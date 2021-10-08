@@ -34,10 +34,25 @@
       <h1>Who I Am</h1>
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hi there! Welcome to the portfolio of Brandon Coffey. I am a hardworking UT Dallas student and programmer who strives to write
+          clean, powerful code and tools for game development. I’m eager to learn and work my skills into solid prototypes and build
+          tools alongside the designers who will use them.
+        </p>
+        <p>
+          I have a desire to enter a profession in the games industry because I have a passion for scripting in the sense of building
+          tools for designers and to create cool effects and various gameplay mechanics. What I want to do is put my skills and passion
+          into a game or idea that someone is passionate about. It might sound a little odd, as typically you hear people wanting to
+          create their own dream game, but as it stands my creativity lies in tech demos and complex tools and above all, helping
+          someone else create what they love.
+        </p>
+        <p>
+          On another note, I am a third-year university student at the University of Texas at Dallas, studying animation, game development,
+          and computer science. I was only introduced to the idea of coding two years ago, and I quickly picked it up by helping my friends
+          in their classes and starting and finishing various projects almost every week, one of which was a chess prototype in Processing,
+          built with 1.6k lines of code. From there, I decided to take a CS minor and tested out of the first course, and for the next year
+          learned C++, Java, Python, C#, HTML, and a little bit of Rust. Now, I love game development and scripting out projects in Unity
+          and a couple from scratch. I also have skills in modeling, lighting, and texturing, and am constantly learning every piece of
+          software I can get my hands on, from Houdini to Unreal Engine.
         </p>
       </div>
 
@@ -69,10 +84,11 @@
 
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Portal was a fantastic game and followed by the masterpiece that is portal 2, and I wanted to look a little deeper into how it was
+          made. The portal itself has multiple approaches involving camera effects, room duplicates, or raycasts, and each has their own ups
+          and downs. I decided on camera effects, because they were the easiest to implement in an intuitive way. Each portal has its own second
+          camera that renders the scene and passes the ‘image texture’ to the other portal. The effect worked amazingly, after a good amount of
+          polish, and I would love to dive into the other methods at some point too.
         </p>
       </div>
 
@@ -91,10 +107,11 @@
 
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          A boss battle! With tanks! What could be better? I've long been a fan of an old and simple game called Wii Play Tanks, and wanted to
+          implement some of those ideas into a game. The perfect opportunity came as a university project, where we had to build a simple tank
+          controller and a boss that could move and attack. I expanded on this idea and built a simple intro cutscene to build up the boss and
+          gave him multiple stages to make it more progressive. On a more technical level, I implemented the observer pattern for more efficient
+          game references, the state pattern for cleaner AI, and object pooling (for both sound effects and the bullets) for better performance.
         </p>
       </div>
     </div>
@@ -104,10 +121,8 @@
       <h1>Coding & Tools</h1>
       <hr>
 
-      <h2>Portal Recreation Demo</h2>
-      <video controls style="max-width:1500px;width:100%">
-        <source src="Assets/Portal_Gameplay.mp4" type="video/mp4" alt="Portal Demo Video">
-      </video>
+      <h2>Dynamic Sound System</h2>
+      <img src="Assets/DynamicSoundSystem.jpg" alt="Dynamic Sound System" style="max-width:1500px;width:100%">
 
       <h4>
         <a href="https://www.artstation.com/artwork/Xnv0NR" target="_blank">View on Artstation</a>
@@ -117,10 +132,24 @@
 
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          A music and sound effect manager, packed with object pooling for better performance, customizable audio clip references, and a WIP music manager.
+        </p>
+        <p>
+          Sound Effects:
+        </p>
+        <p>
+          There are three ways to use a Sound Effect Reference with this tool, either directly input the audio clip, create a Sound Data Object
+          (Allows you to adjust volume, pitch, etc. of a clip), or a Sound Event (Can reference multiple clips and select a random volume and pitch
+          from specified ranges). The Sound Events allow for unique and interesting sfx during gameplay that vary each time it is played. For
+          simplicity, each of these just has to be referenced by a script and can say _soundObject.Play();
+        </p>
+        <p>
+          Music Manager:
+        </p>
+        <p>
+          The music manager I am building has layers of complexity and at its core allow for dynamic soundtracks with toggleable levels (Ex: Normal
+          and Combat) that can be mixed together. It can fade tracks in and out and allows for different music tracks to be played in different areas
+          of the level.
         </p>
       </div>
 
@@ -140,10 +169,10 @@
 
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          An old classroom that was long abandoned and left to wither and rust. Everything you see in this environment is surfaced and textured
+          procedurally, with the use of only two textures, one for scratches and one for the tiles on the floor. This scene was set up and lit in Autodesk
+          Maya with the use of Arnold shaders, though the ideas behind procedural shading can be used in Houdini, Unity, or Unreal as well. To further
+          this, I am in the process of learning Shader Graph and VFX Graph in Unity HDRP. A breakdown of the wood shader is shown below:
         </p>
       </div>
       
@@ -161,10 +190,9 @@
 
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          A lamp-lit forest trail in the late afternoon crossing over a river into a clearing littered with flowers and grass. This was an environment that
+          I created in one month for a class, where everything is modeled and textured and lit by myself. Although most of what I do involves code, it is
+          useful to know the rest of the pipeline and be capable of doing a first pass on everything from models to gameplay.
         </p>
       </div>
 
@@ -181,67 +209,56 @@
       <h1>Analysis of Earthbound (1995)</h1>
 
       <div class="w3-container w3-content w3-left-align" style="max-width:1200px;line-height:2">
-        <p class="w3-justify">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          Earthbound, known as Mother II in Japan, redefined the very popular genre of role
-          playing games (RPGs) with their unique, down to earth story approach. Development of the
-          game was a joint effort between Ape Inc and HAL Laboratories, led by Shigesato Itoi. The
-          developers’ intent with this RPG was to get the player invested in a story through the use of
-          emotional storytelling and characters with strong and quirky personalities. Itoi “wanted to create
-          a game (EarthBound) with real characters; characters whom players would recognize in the
-          people around them” (Mato). Earthbound achieves these effects on the player through
-          unconventional level design, text dialog boxes that are hidden everywhere, and personal
-          narrative.
+        <p class="w3-justify" style="text-indent: 40px">
+          Earthbound, known as Mother II in Japan, redefined the very popular genre of role-playing games
+          (RPGs) with their unique, down to earth, story approach. Development of the game was a joint
+          effort between Ape Inc and HAL Laboratories, led by Shigesato Itoi. The developers’ intent with
+          this RPG was to get the player invested in a story using emotional storytelling and characters
+          with strong and quirky personalities. More specifically, Itoi “wanted to create a game
+          (EarthBound) with real characters; characters whom players would recognize in the people
+          around them” (Mato). Earthbound achieves these effects on the player through unconventional
+          level design, hidden dialog boxes, and personal narrative.
         </p>
-        <p class="w3-justify">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          The level design in Earthbound is unconventional and diverse. The world is large with set
-          styles for different areas while still including minor details everywhere. The developers focused
-          on worldbuilding more than anything else. This enhances the game by broadening the experience
-          of the game to enjoy across different levels. There is no hub world or standard game area. This
-          way, the level feels more like an open world, where the player can explore or continue the story
-          as they like. Eventually, as the game progresses, odd visual and artistic choices are also taken,
-          especially at the end with the battle against Giygas, the final boss. Through all the world design
-          and artistic choices, Itoi’s goal is to make the player feel emotions such as happiness and
-          satisfaction as well as distraught and loneliness.
+        <p class="w3-justify" style="text-indent: 40px">
+          The level design in Earthbound is unconventional and diverse. The world is large with various
+          styles for each area while still having minute details. The developers focused on worldbuilding
+          more than anything else. This broadens the experience of the game and is more enjoyable across
+          different levels. Another key factor is the lack of a hub world. This way, the level feels more
+          like an open world, where the player can explore or continue the story as they like. Through all
+          the world design and artistic choices, Itoi’s goal is to make the player feel emotions, from
+          happiness and satisfaction to loneliness.
         </p>
-        <p class="w3-justify">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          At the core of the game, the use of the text box is widespread, as it was manipulated and
-          emphasized across the game to better illustrate the idea presented, along with clever writing to
-          match. The use of text boxes to display information or simple dialog is common, but to hide
-          dialog all over the environment throughout the game is unique. This is an interesting choice, as
-          most RPGs are more streamlined and appeal solely to fantasy, while this is surreal and feels like
-          an entirely different genre. However, Earthbound’s text dialogue is on a deeper level than just
-          text, as the writing is impactful, always relevant or humorous, and most importantly, it does not
-          just convey information, but successfully does so in a unique way each and every time. Stuff like
-          saving, battle dialogue, or tips and hits, are often memorable, ridiculous, or off-putting, which is
-          such an incredible touch of language that works to distinguish this game from other RPGs.
+        <p class="w3-justify" style="text-indent: 40px">
+          At the core of the game, there is the ever-useful text box for dialogue. This common popup is
+          manipulated and emphasized purposefully for the context of the moment, giving clearer
+          intent. On top of this, clever writing builds and strengthens an emotional
+          connection with the player. Around the time Earthbound was released, it was common to see text
+          boxes that display information or simple dialog, but Earthbound goes beyond that with quirky
+          effects and hidden dialog across the world that makes those who find it feel special. This is an
+          interesting choice, as most RPGs are more streamlined and appeal solely to fantasy, while Earthbound
+          is surreal and feels like an entirely different genre. Beyond this, there is such an incredible touch
+          of personality in the writing, where even simple stuff like saving, battle dialogue, and tips can
+          be memorable, ridiculous, or off-putting.
         </p>
-        <p class="w3-justify">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          Throughout the game, Earthbound has a directed, yet open narrative. Much of the game is
-          not the main story; it is supported by all of the characters and towns and dialogue. The narrative
-          is often quirky and personal, leading the player to become more emotionally invested into the
-          story, which is a core element of the game. This is mostly due to the director, Itoi, where he
-          would present odd ideas and eventually “people would start chiming in with other similar ideas
-          of their own. Those links of reckless wildness are what the Mother games are built on”
-          (Schreier). Such a creative open dialogue within the developmental team paid off in a unique and
+        <p class="w3-justify" style="text-indent: 40px">
+          The designers kept the narrative directed and concise, but let it appear open to the player. This
+          choice allowed most of the game to be about  all the characters and the towns, rather than the main story,
+          The narrative has a quirky and personal appeal, leading
+          the player to become more emotionally invested into the story. This was intentional, as Itoi would
+          present odd ideas to his team and eventually “people would start chiming in with other similar ideas
+          of their own. Those links of reckless wildness are what the Mother games are built on” (Schreier).
+          Such a creative open dialogue within the developmental team made Earthbound into a unique and
           intriguing game that became so much more than just a cut and dry RPG. This creative “wildness”
-          is directly applied to the narrative and to environmental features, as described before with hidden
-          text boxes, which emphasize a non-linear story.
+          is directly applied to the narrative and to environmental features.
         </p>
-        <p class="w3-justify">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          The atmosphere, text box usage, and the narrative are all closely tied together and work
-          to benefit each other to make Earthbound into a game that inspired so many after it. Earthbound
-          “remains an underappreciated video game franchise with a dedicated cult following, but with it, 
-          some of the most popular indie games today would not exist” (Jensen). One game that was
-          directly influenced by Earthbound is the 2015's Undertale, by its unique means of how RPGs are
-          played. The diverse text box is used heavily and story and worldbuilding is everything in the
-          game. Both games are meant to be an intimate experience for the player, where they are invested
-          into the immersive world presented in the game by the non-linear level design and quirky
-          characters who are filled with diverse personalities.
+        <p class="w3-justify" style="text-indent: 40px">
+          Earthbound is a unique game that has touched many hearts and inspired many other games. It “remains an
+          underappreciated video game franchise with a dedicated cult following, but with it, some of the most
+          popular indie games today would not exist” (Jensen). One game that was directly influenced by
+          Earthbound is Undertale (2015), by following the unique genre set by Earthbound. The game is about the dialogue
+          and world building more than the gameplay itself. These kinds of games are
+          an intimate experience for the player, allowing for them to invest in the immersive world presented
+          by the non-linear level design and quirky characters.
         </p>
       </div>
 
