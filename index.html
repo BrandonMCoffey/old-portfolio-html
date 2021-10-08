@@ -17,61 +17,66 @@
 
 <div class="w3-row-padding w3-center w3-margin-top">
     
-<div class="w3-border">
+  <div class="w3-border">
+    <!-- Section Buttons -->
     <div class="w3-bar w3-theme">
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'DEMO')">Demo Reel</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'CT')">Coding & Tools</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'DR')">Demo Reel</button>
       <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'CT')">Coding & Tools</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'GE')">Game Essay</button>
+      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'CM')">Contact Me</button>
     </div>
     
     <!-- Demo Reel -->
-    <div id="DEMO" class="w3-container page">
+    <div id="DR" class="w3-container page">
       <h2>Demo Reel</h2>
       <video controls style="width:85%">
         <source src="Assets/Demo_Reel.mp4" type="video/mp4" alt="Portal Demo Video">
       </video>
-    </div>
-    
-    <!-- Virtual Environments -->
-    <div id="VE" class="w3-container page">
-      <h2>Virtual Environments</h2>
-      <img src="Assets/Environment_01_Key.png" alt="Virutal Environments 01" style="width:85%">
 
       <hr>
-      <h2 class="w3-center">Other Work</h2>
-      <button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Work 1</button>
-      <div id="Demo1" class="w3-hide">
-        <div class="w3-container">
-          <p>Work 1</p>
-        </div>
-      </div>
 
-      <button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Work 2</button>
-      <div id="Demo2" class="w3-hide">
-        <p>Work 2</p>
-      </div>
-
-      <button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Work 3</button>
-      <div id="Demo3" class="w3-hide w3-black">
-        <div class="w3-container">
-          <p>Work 2</p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Coding and Tools -->
-    <div id="CT" class="w3-container page">
-      <h2>Coding & Tools</h2>
-      <video controls style="width:85%">
-        <source src="Assets/Portal_Demo_01.mp4" type="video/mp4" alt="Portal Demo Video">
-      </video>
+      <h2>Artist Statement</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
     
     <!-- Game Development -->
     <div id="GD" class="w3-container page">
-      <h2>Game Development</h2>
-      <img src="Assets/Environment_01_Key.png" alt="Virutal Environments 01" style="width:85%">
+      <h1>Game Development</h1>
+      <hr>
+
+      <h2>Tank Boss Battle</h2>
+      <h4>Scripting for Games II</h4>
+      <video controls style="width:85%">
+        <source src="Assets/TankGame_Gameplay.mp4" type="video/mp4" alt="Tank Boss Battle Gameplay">
+      </video>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <hr>
+
+      <h2>Telemancer</h2>
+      <h4>2021 Fall Game Lab</h4>
+      <video controls style="width:85%">
+        <source src="Assets/CoffeyBrandon_ArmAnimationProgress.mp4" type="video/mp4" alt="Game Lab Progress Video">
+      </video>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
       <div class="w3-half">
           <p>Information about Game Lab</p>
       </div>
@@ -84,6 +89,120 @@
         </ul>
         </div>
     </div>
+    
+    <!-- Coding and Tools -->
+    <div id="CT" class="w3-container page">
+      <h1>Coding & Tools</h1>
+      <hr>
+
+      <h2>Portal Recreation Demo</h2>
+      <h4>Scripting for Games I</h4>
+      <video controls style="width:85%">
+        <source src="Assets/Portal_Gameplay.mp4" type="video/mp4" alt="Portal Demo Video">
+      </video>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <hr>
+    </div>
+    
+    <!-- Virtual Environments -->
+    <div id="VE" class="w3-container page">
+      <h1>Virtual Environments</h1>
+      <hr>
+
+      <h2>Classroom Environment</h2>
+      <h4>Surfacing and Shading</h4>
+      <img src="Assets/Classroom_DarkScene.jpg" alt="Classroom Environment" style="width:85%">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <button onclick="myAccFunc('ShaderSetup')" class="w3-padding-16 w3-theme w3-button w3-center-align" style="width:85%">Procedural Shading</button>
+      <div id="ShaderSetup" class="w3-hide">
+        <div class="w3-container">
+          <img src="Assets/Classroom_WoodShader.PNG" alt="Classroom Environment Wood Shader" style="width:90%">
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>Outdoors Forest</h2>
+      <h4>Virtual Environments</h4>
+      <img src="Assets/Environment_01_Key.png" alt="Outdoors Environment" style="width:85%">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <button onclick="myAccFunc('OtherShots')" class="w3-padding-16 w3-theme w3-button w3-center-align" style="width:85%">Texture Breakdown</button>
+      <div id="OtherShots" class="w3-hide">
+        <div class="w3-container w3-center-align" style="width:90%">
+          <div class="w3-half w3-center-align">
+            <img src="Assets/CoffeyBrandon_Grass.png" alt="Outdoors Environment Grass Textures" style="width:90%">
+          </div>
+          <div class="w3-half w3-center-align">
+            <img src="Assets/CoffeyBrandon_LampPost.png" alt="Outdoors Environment Lamp Post Textures" style="width:90%">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+    </div>
+    
+    <!-- Game Essay -->
+    <div id="GE" class="w3-container page">
+      <h2>Game Essay</h2>
+      <div class="w3-center-align" style="width:85%">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Contact Me -->
+    <div id="CM" class="w3-container page">
+      <h2>Contact Me</h2>
+      <div class="w3-half">
+        <p>Brandon Coffey</p>
+        <p>bmc939@gmail.com</p>
+      </div>
+      <div class="w3-half">
+        <p>LinkedIn</p>
+        <p>ArtStation</p>
+      </div>
+
+      <hr>
+
+      <iframe src="Assets/Brandon Coffey - Resume.pdf" alt="Resume" width="85%" height="1080px"></iframe>
+    </div>
+
+    <!-- End Of Sections-->
+  </div>
 </div>
 
 <hr>
