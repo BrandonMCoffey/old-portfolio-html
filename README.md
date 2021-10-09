@@ -1,2 +1,2 @@
 # Game Dev Portfolio
-https://brandonmcoffey.github.io/GameDevPortfolio/
+https://brandonmcoffey.github.io/Portfolio/
