@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <body>
 
 <!-- Header -->
@@ -20,13 +19,12 @@
     
   <div class="w3-border">
     <!-- Section Buttons -->
-    <div class="w3-bar w3-theme">
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'DR')">Demo Reel</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'CT')">Coding & Tools</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'GE')">Game Essay</button>
-      <button class="w3-button testbtn w3-padding-16" onclick="openPage(event,'CM')">Contact Me</button>
+    <div class="w3-row w3-theme">
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'DR')">Home / Demo Reel</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GE')">Game Analysis</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'CM')">Contact Me</button>
     </div>
     
     <!-- Demo Reel -->
@@ -116,46 +114,6 @@
           game references, the state pattern for cleaner AI, and object pooling (for both sound effects and the bullets) for better performance.
         </p>
       </div>
-    </div>
-    
-    <!-- Coding and Tools -->
-    <div id="CT" class="w3-container page">
-      <h1>Coding & Tools</h1>
-      <hr>
-
-      <h2>Dynamic Sound System</h2>
-      <img src="Assets/DynamicSoundSystem.jpg" alt="Dynamic Sound System" style="max-width:1500px;width:100%">
-
-      <h4>
-        <a href="https://www.artstation.com/artwork/Xnv0NR" target="_blank">View on Artstation</a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a href="https://github.com/BrandonMCoffey/Portal-TechDemo" target="_blank">Github Respository</a>
-      </h4>
-
-      <div class="w3-container w3-content w3-center" style="max-width:1200px">
-        <p>
-          A music and sound effect manager, packed with object pooling for better performance, customizable audio clip references, and a WIP music manager.
-        </p>
-        <p>
-          Sound Effects:
-        </p>
-        <p>
-          There are three ways to use a Sound Effect Reference with this tool, either directly input the audio clip, create a Sound Data Object
-          (Allows you to adjust volume, pitch, etc. of a clip), or a Sound Event (Can reference multiple clips and select a random volume and pitch
-          from specified ranges). The Sound Events allow for unique and interesting sfx during gameplay that vary each time it is played. For
-          simplicity, each of these just has to be referenced by a script and can say _soundObject.Play();
-        </p>
-        <p>
-          Music Manager:
-        </p>
-        <p>
-          The music manager I am building has layers of complexity and at its core allow for dynamic soundtracks with toggleable levels (Ex: Normal
-          and Combat) that can be mixed together. It can fade tracks in and out and allows for different music tracks to be played in different areas
-          of the level.
-        </p>
-      </div>
-
-      <br>
     </div>
     
     <!-- Virtual Environments -->
@@ -321,7 +279,7 @@ function openPage(evt, pageName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  var activebtn = document.getElementsByClassName("testbtn");
+  var activebtn = document.getElementsByClassName("pageButton");
   for (i = 0; i < x.length; i++) {
     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
   }
