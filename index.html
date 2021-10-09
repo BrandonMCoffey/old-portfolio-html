@@ -31,10 +31,12 @@
     
     <!-- Demo Reel -->
     <div id="DR" class="w3-container page">
-      <h1>Who I Am</h1>
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <h2>
+          Hi there! Welcome to my portfolio!
+        </h2>
         <p>
-          Hi there! Welcome to the portfolio of Brandon Coffey. I am a hardworking UT Dallas student and programmer who strives to write
+          I am a hardworking UT Dallas student and programmer who strives to write
           clean, powerful code and tools for game development. I’m eager to learn and work my skills into solid prototypes and build
           tools alongside the designers who will use them.
         </p>
@@ -206,7 +208,7 @@
     
     <!-- Game Essay -->
     <div id="GE" class="w3-container page">
-      <h1>Analysis of Earthbound (1995)</h1>
+      <h1>The Influence of Earthbound (1995)</h1>
 
       <div class="w3-container w3-content w3-left-align" style="max-width:1200px;line-height:2">
         <p class="w3-justify" style="text-indent: 40px">
@@ -326,6 +328,8 @@ function openPage(evt, pageName) {
   document.getElementById(pageName).style.display = "block";
   evt.currentTarget.className += " w3-dark-grey";
 }
+
+openPage(event, "DR");
 </script>
 
 </body>
