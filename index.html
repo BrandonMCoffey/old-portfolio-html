@@ -20,49 +20,59 @@
   <div class="w3-border">
     <!-- Section Buttons -->
     <div class="w3-row w3-theme">
-      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'DR')">Home / Demo Reel</button>
-      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
       <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
-      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GE')">Game Analysis</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'HO')">Houdini</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'DR')">Demo Reel</button>
+      <!-- <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GE')">Game Analysis</button> -->
       <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'CM')">Contact Me</button>
     </div>
     
-    <!-- Demo Reel -->
-    <div id="DR" class="w3-container page">
+    <!-- Virtual Environments -->
+    <div id="VE" class="w3-container page">
+      <h1>Virtual Environments</h1>
+      <hr>
+
+      <h2>Forest Environment</h2>
+      <h4>Virtual Environment (Unity)</h4>
+      <video controls style="max-width:1500px;width:100%">
+        <source src="Assets/OutdoorsScene.mp4" type="video/mp4" alt="Portal Demo Video">
+      </video>
+      
+      <h4><a href="https://www.artstation.com/artwork/g2vdVK" target="_blank">View on Artstation</a></h4>
+
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
-        <h2>
-          Hi there! Welcome to my portfolio!
-        </h2>
         <p>
-          I am a hardworking UT Dallas student and programmer who strives to write
-          clean, powerful code and tools for game development. I’m eager to learn and work my skills into solid prototypes and build
-          tools alongside the designers who will use them.
+          A lamp-lit forest trail in the late afternoon crossing over a river into a clearing littered with flowers and grass. This was an environment that
+          I created in one month for a class, where everything is modeled and textured and lit by myself. Although most of what I do involves code, it is
+          useful to know the rest of the pipeline and be capable of doing a first pass on everything from models to gameplay.
         </p>
-        <p>
-          I have a desire to enter a profession in the games industry because I have a passion for scripting in the sense of building
-          tools for designers and to create cool effects and various gameplay mechanics. What I want to do is put my skills and passion
-          into a game or idea that someone is passionate about. It might sound a little odd, as typically you hear people wanting to
-          create their own dream game, but as it stands my creativity lies in tech demos and complex tools and above all, helping
-          someone else create what they love.
-        </p>
-        <p>
-          On another note, I am a third-year university student at the University of Texas at Dallas, studying animation, game development,
-          and computer science. I was only introduced to the idea of coding two years ago, and I quickly picked it up by helping my friends
-          in their classes and starting and finishing various projects almost every week, one of which was a chess prototype in Processing,
-          built with 1.6k lines of code. From there, I decided to take a CS minor and tested out of the first course, and for the next year
-          learned C++, Java, Python, C#, HTML, and a little bit of Rust. Now, I love game development and scripting out projects in Unity
-          and a couple from scratch. I also have skills in modeling, lighting, and texturing, and am constantly learning every piece of
-          software I can get my hands on, from Houdini to Unreal Engine.
-        </p>
+      </div>
+
+      <div class="w3-container w3-content w3-center-align" style="max-width:1650px;width:100%">
+        <img src="Assets/OutdoorsScene_Grass.png" alt="Outdoors Environment Grass Textures" style="width:49%">
+        <img src="Assets/OutdoorsScene_LampPost.png" alt="Outdoors Environment Lamp Post Textures" style="width:49%">
       </div>
 
       <hr>
 
-      <h1>Demo Reel</h1>
-      <video controls style="max-width:1500px;width:100%">
-        <source src="Assets/Demo_Reel.mp4" type="video/mp4" alt="Portal Demo Video">
-      </video>
+      <h2>Old Classroom</h2>
+      <h4>Prodedural Surfacing</h4>
+      <img src="Assets/Classroom_DarkScene.jpg" alt="Classroom Environment" style="max-width:1500px;width:100%">
+
+      <h4><a href="https://www.artstation.com/artwork/48WyL8" target="_blank">View on Artstation</a></h4>
+
+      <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <p>
+          An old classroom that was long abandoned and left to wither and rust. Everything you see in this environment is surfaced and textured
+          procedurally, with the use of only two textures, one for scratches and one for the tiles on the floor. This scene was set up and lit in Autodesk
+          Maya with the use of Arnold shaders, though the ideas behind procedural shading can be used in Houdini, Unity, or Unreal as well. To further
+          this, I am in the process of learning Shader Graph and VFX Graph in Unity HDRP. A breakdown of the wood shader is shown below:
+        </p>
+      </div>
       
+      <img src="Assets/Classroom_WoodShader.PNG" alt="Classroom Environment Wood Shader" style="max-width:1500px;width:100%">
+
       <br>
     </div>
     
@@ -116,55 +126,84 @@
       </div>
     </div>
     
-    <!-- Virtual Environments -->
-    <div id="VE" class="w3-container page">
-      <h1>Virtual Environments</h1>
+    <!-- Houdini -->
+    <div id="HO" class="w3-container page">
+      <h1>Houdini Work</h1>
       <hr>
 
-      <h2>Old Classroom</h2>
-      <h4>Prodedural Surfacing</h4>
-      <img src="Assets/Classroom_DarkScene.jpg" alt="Classroom Environment" style="max-width:1500px;width:100%">
-
-      <h4><a href="https://www.artstation.com/artwork/48WyL8" target="_blank">View on Artstation</a></h4>
+      <h2>Beach Render</h2>
+      <h4>Houdini - Procedural Objects and Materials</h4>
+      <img src="Assets/Houdini_Beach.png" alt="Proceudral Objects and Material - Render" style="max-width:1500px;width:100%">
 
       <div class="w3-container w3-content w3-center" style="max-width:1200px">
         <p>
-          An old classroom that was long abandoned and left to wither and rust. Everything you see in this environment is surfaced and textured
-          procedurally, with the use of only two textures, one for scratches and one for the tiles on the floor. This scene was set up and lit in Autodesk
-          Maya with the use of Arnold shaders, though the ideas behind procedural shading can be used in Houdini, Unity, or Unreal as well. To further
-          this, I am in the process of learning Shader Graph and VFX Graph in Unity HDRP. A breakdown of the wood shader is shown below:
+          One of the projects from my first class teaching Houdini. This is a render of a beach and a couple sand shells. Everything from the materials to the
+          objects is procedurally created through various nodes in Houdini.
         </p>
       </div>
-      
-      <img src="Assets/Classroom_WoodShader.PNG" alt="Classroom Environment Wood Shader" style="max-width:1500px;width:100%">
 
       <hr>
 
-      <h2>Forest Environment</h2>
-      <h4>Virtual Environment (Unity)</h4>
+      <h2>Catapult</h2>
+      <img src="Assets/Houdini_Catapult.jpg" alt="Catapult" style="max-width:1500px;width:100%">
+
+      <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <p>
+          A catapult! All three of these catapults are made from the same setup, with just a few sliders changed. This work demonstrates my understanding of a
+          procedural workflow in Houdini, and how to make various similar objects from one base.
+        </p>
+      </div>
+      
+      <h2>Various procedural trees</h2>
+      <img src="Assets/Houdini_LTree.jpg" alt="L Trees" style="max-width:1500px;width:100%">
+
+      <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <p>
+          A couple L trees that I created in Houdini for a class project. I explored various implementations of L trees and the effects that they could create.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Demo Reel -->
+    <div id="DR" class="w3-container page">
+      <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <h2>
+          Hi there! Welcome to my portfolio!
+        </h2>
+        <p>
+          I am a hardworking UT Dallas student and programmer who strives to write
+          clean, powerful code and tools for game development. I’m eager to learn and work my skills into solid prototypes and build
+          tools alongside the designers who will use them.
+        </p>
+        <p>
+          I have a desire to enter a profession in the games industry because I have a passion for scripting in the sense of building
+          tools for designers and to create cool effects and various gameplay mechanics. What I want to do is put my skills and passion
+          into a game or idea that someone is passionate about. It might sound a little odd, as typically you hear people wanting to
+          create their own dream game, but as it stands my creativity lies in tech demos and complex tools and above all, helping
+          someone else create what they love.
+        </p>
+        <p>
+          On another note, I am a third-year university student at the University of Texas at Dallas, studying animation, game development,
+          and computer science. I was only introduced to the idea of coding two years ago, and I quickly picked it up by helping my friends
+          in their classes and starting and finishing various projects almost every week, one of which was a chess prototype in Processing,
+          built with 1.6k lines of code. From there, I decided to take a CS minor and tested out of the first course, and for the next year
+          learned C++, Java, Python, C#, HTML, and a little bit of Rust. Now, I love game development and scripting out projects in Unity
+          and a couple from scratch. I also have skills in modeling, lighting, and texturing, and am constantly learning every piece of
+          software I can get my hands on, from Houdini to Unreal Engine.
+        </p>
+      </div>
+
+      <hr>
+
+      <h1>Demo Reel</h1>
       <video controls style="max-width:1500px;width:100%">
-        <source src="Assets/OutdoorsScene.mp4" type="video/mp4" alt="Portal Demo Video">
+        <source src="Assets/Demo_Reel.mp4" type="video/mp4" alt="Portal Demo Video">
       </video>
       
-      <h4><a href="https://www.artstation.com/artwork/g2vdVK" target="_blank">View on Artstation</a></h4>
-
-      <div class="w3-container w3-content w3-center" style="max-width:1200px">
-        <p>
-          A lamp-lit forest trail in the late afternoon crossing over a river into a clearing littered with flowers and grass. This was an environment that
-          I created in one month for a class, where everything is modeled and textured and lit by myself. Although most of what I do involves code, it is
-          useful to know the rest of the pipeline and be capable of doing a first pass on everything from models to gameplay.
-        </p>
-      </div>
-
-      <div class="w3-container w3-content w3-center-align" style="max-width:1650px;width:100%">
-        <img src="Assets/OutdoorsScene_Grass.png" alt="Outdoors Environment Grass Textures" style="width:49%">
-        <img src="Assets/OutdoorsScene_LampPost.png" alt="Outdoors Environment Lamp Post Textures" style="width:49%">
-      </div>
-
       <br>
     </div>
     
-    <!-- Game Essay -->
+    <!-- Game Essay
     <div id="GE" class="w3-container page">
       <h1>The Influence of Earthbound (1995)</h1>
 
@@ -233,6 +272,7 @@
       </div>
       <br>
     </div>
+    -->
     
     <!-- Contact Me -->
     <div id="CM" class="w3-container page">
@@ -287,7 +327,7 @@ function openPage(evt, pageName) {
   evt.currentTarget.className += " w3-dark-grey";
 }
 
-openPage(event, "DR");
+openPage(event, "VE");
 </script>
 
 </body>
