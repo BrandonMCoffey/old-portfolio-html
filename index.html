@@ -452,7 +452,15 @@ function openPage(evt, pageName) {
   }
   document.getElementById(pageName).style.display = "block";
 }
-openPage(event, 'VE');
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const page = urlParams.get('page');
+if (page == null) {
+  openPage(event, 'VE');
+} else {
+  openPage(event, page);
+}
 </script>
 
 </body>
