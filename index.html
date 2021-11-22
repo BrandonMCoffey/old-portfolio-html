@@ -20,14 +20,57 @@
   <div class="w3-border">
     <!-- Section Buttons -->
     <div class="w3-row w3-theme">
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'DR')">Demo Reel</button>
       <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'VE')">Virtual Environments</button>
       <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GD')">Game Development</button>
-      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'DR')">Demo Reel</button>
       <!-- <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'HO')">Houdini</button> -->
-      <!-- <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'GE')">Game Analysis</button> -->
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'TP')">Team Projects</button>
+      <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'RM')">Resume</button>
       <button class="w3-theme-l1 w3-button pageButton w3-padding-16" onclick="openPage(event,'CM')">Contact Me</button>
     </div>
     
+    <!-- Demo Reel -->
+    <div id="DR" class="w3-container page">
+      <hr>
+      
+      <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <h2>
+          Hi there! Welcome to my portfolio!
+        </h2>
+        <p>
+          I am a hardworking UT Dallas student and programmer who strives to write
+          clean, powerful code and tools for game development. I’m eager to learn and work my skills into solid prototypes and build
+          tools alongside the designers who will use them.
+        </p>
+        <p>
+          I have a desire to enter a profession in the games industry because I have a passion for scripting in the sense of building
+          tools for designers and to create cool effects and various gameplay mechanics. What I want to do is put my skills and passion
+          into a game or idea that someone is passionate about. It might sound a little odd, as typically you hear people wanting to
+          create their own dream game, but as it stands my creativity lies in tech demos and complex tools and above all, helping
+          someone else create what they love.
+        </p>
+        <p>
+          On another note, I am a third-year university student at the University of Texas at Dallas, studying animation, game development,
+          and computer science. I was only introduced to the idea of coding two years ago, and I quickly picked it up by helping my friends
+          in their classes and starting and finishing various projects almost every week, one of which was a chess prototype in Processing,
+          built with 1.6k lines of code. From there, I decided to take a CS minor and tested out of the first course, and for the next year
+          learned C++, Java, Python, C#, HTML, and a little bit of Rust. Now, I love game development and scripting out projects in Unity
+          and a couple from scratch. I also have skills in modeling, lighting, and texturing, and am constantly learning every piece of
+          software I can get my hands on, from Houdini to Unreal Engine.
+        </p>
+      </div>
+
+      <hr>
+
+      <h1>Demo Reel</h1>
+      <video controls style="max-width:1500px;width:100%">
+        <source src="Assets/Demo_Reel.mp4" type="video/mp4" alt="Portal Demo Video">
+      </video>
+      
+      <br>
+      <br>
+    </div>
+
     <!-- Virtual Environments -->
     <div id="VE" class="w3-container page">
       <h1>Virtual Environments</h1>
@@ -54,10 +97,11 @@
         <img src="Assets/OutdoorsScene_LampPost.png" alt="Outdoors Environment Lamp Post Textures" style="width:49%">
       </div>
 
+      <br>
       <hr>
 
       <h2>Old Classroom</h2>
-      <h4>Prodedural Surfacing</h4>
+      <h4>Prodedural Surfacing (Maya)</h4>
       <img src="Assets/Classroom_DarkScene.jpg" alt="Classroom Environment" style="max-width:1500px;width:100%">
 
       <h4><a href="https://www.artstation.com/artwork/48WyL8" target="_blank">View on Artstation</a></h4>
@@ -74,11 +118,12 @@
       <img src="Assets/Classroom_WoodShader.PNG" alt="Classroom Environment Wood Shader" style="max-width:1500px;width:100%">
 
       <br>
+      <br>
     </div>
     
     <!-- Game Development -->
     <div id="GD" class="w3-container page">
-      <h1>Game Development</h1>
+      <h1>Game Development (Unity)</h1>
       <hr>
 
       <h2>Portal Recreation Demo</h2>
@@ -124,8 +169,213 @@
           game references, the state pattern for cleaner AI, and object pooling (for both sound effects and the bullets) for better performance.
         </p>
       </div>
+
+      <br>
     </div>
     
+    <!-- Team Projects -->
+    <div id="TP" class="w3-container page">
+      <h1>Team Projects</h1>
+      <hr>
+
+      <h2>Telemancer: Septembers Story</h2>
+      <h4>Programmer (Unity)</h4>
+      <video controls style="max-width:1500px;width:100%">
+        <source src="Assets/Telemancer_Demo.mp4" type="video/mp4" alt="Telemancer Demo">
+      </video>
+
+      <h4>
+        <a href="https://github.com/metalac190/GameLab_Telemancer" target="_blank">Github Repository</a>
+      </h4>
+
+      <div class="w3-container w3-content w3-center" style="max-width:1200px">
+        <p>
+          Telemancer: September's Story is part of the course, Game Lab, at UTD. Me and 40+ students spent Fall 2021 designing and 
+          developing the game, from the story to the art to the programming. I was in charge of Player Systems, which revolves around the
+          the actions that a player can take and how they interact with the world. My work included the player's abilities, implementing
+          animations, and setting up feedback and state systems.
+        </p>
+        <br>
+        <h5>The other programmers on my team are listed below:</h5>
+
+        <div class="w3-container w3-content w3-center-align">
+          <div class="w3-half" style="max-width:450px">
+            <div class="w3-card w3-container w3-content w3-left-align" style="width:80%">
+              <h4>Fellow Programmers</h4>
+              <p><a href="https://andrewrsylvester.wixsite.com/portfolio" target="_blank">Andrew Sylvester</a></p>
+              <p><a href="https://sparkfire.dev/" target="_blank">Bill Dang</a></p>
+              <p><a href="https://brett-austin.wixsite.com/portfolio" target="_blank">Brett Austin</a></p>
+              <p>Henry Werner</p>
+              <p><a href="https://noah-sims.wixsite.com/portfolio" target="_blank">Noah Sims</a></p>
+              <p><a href="https://www.xanderyoussef.com/index.html" target="_blank">Xander Youssef</a></p>
+            </div>
+          </div>
+          <div class="w3-half" style="max-width:450px">
+            <div class="w3-card w3-container w3-content w3-left-align" style="width:80%">
+              <h4>Fellow Artists and Designers</h4>
+              <p><a href="https://cameron-meyer.wixsite.com/portfolio" target="_blank">Cameron Meyer</a></p>
+              <p><a href="https://www.sammymahmoudi.com/other-interests.html" target="_blank">Sammy Mahmoudi</a></p>
+              <p><a href="https://greensheridan2.wixsite.com/sheridangreen" target="_blank">Sheridan Green</a></p>
+              <p>Jacob Reeder</p>
+              <p>And many more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    
+    <!-- Resume -->
+    <div id="RM" class="w3-container page">
+      <h1>
+        <a href="Assets/Resume.pdf" target="_blank">Resume PDF</a>
+      </h1>
+
+      <hr>
+      <br>
+
+      <div class="w3-container w3-content w3-center-align" style="max-width:512px">
+        <img src="Assets/Profile_Picture.png" alt="Profile Picture" style="width:49%">
+      </div>
+      
+      <br>
+
+      <div class="w3-container w3-content w3-center-align" style="max-width:800px">
+        <h4>
+          Howdy! I'm Brandon Coffey, a skilled Unity developer with a passion for game development and programming. I have a broad
+          understanding of the Animation and Games pipelines, with 6+ years of experience in Maya and plenty of soft skills from 
+          being an Eagle Scout and a restaurant server.
+        </h4>
+      </div>
+      
+      <hr>
+      <br>
+      
+      <div class="w3-container w3-content w3-center-align">
+        <div class="w3-half" style="max-width:450px">
+          <div class="w3-card w3-container w3-content w3-left-align" style="width:80%">
+            <h3 style="text-align:center">Coding Languages</h3>
+            <div style="width:50%;float:left">
+              <h4>Skilled</h4>
+              <p>C#</p>
+              <p>C++</p>
+              <p>Java</p>
+              <p>SDL Library</p>
+            </div>
+            <div style="width:50%;float:right">
+              <h4>Qualified</h4>
+              <p>Python</p>
+              <p>HTML</p>
+              <p>Rust</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-half" style="max-width:450px">
+          <div class="w3-card w3-container w3-content w3-left-align" style="width:80%">
+            <h3 style="text-align:center">Tools and Software</h3>
+            <div style="width:50%;float:left">
+              <h4>Skilled</h4>
+              <p>Unity</p>
+              <p>Substance Painter</p>
+              <p>Maya</p>
+              <p>Photoshop</p>
+            </div>
+            <div style="width:50%;float:right">
+              <h4>Qualified</h4>
+              <p>Unreal Engine</p>
+              <p>Houdini</p>
+              <p>After Effects</p>
+              <p>Shotgrid</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+
+      <div class="w3-container w3-content w3-left-align" style="max-width:400px">
+        <h3 style="text-align:center">Education</h3>
+        <h4>The University of Texas at Dallas</h4>
+        <p>B. A. of Arts, Techonology, and Emerging Communications - Animation and Games</p>
+        <p>Minor in Computer Science</p>
+        <h4>Allen High School</h4>
+      </div>
+      
+      <hr>
+
+      <div class="w3-container w3-content w3-left-align" style="max-width:600px">
+        <h2 style="text-align:center">Work Experience</h2>
+        <!--Work #1-->
+        <h3 style="display:inline">SGDA Club Officer</h3>
+        <h5 style="display:inline;float:right"><i>Nov. 2021 - Present</i></h5>
+        <p style="margin-left:32px">
+          Student Game Developer Alliance Club at UTD
+        </p>
+        <hr>
+        <!--Work #2-->
+        <h3 style="display:inline">Programmer - Telemancer</h3>
+        <h5 style="display:inline;float:right"><i>Sep. 2021 - Present</i></h5>
+        <p style="margin-left:32px">
+          Worked as a programmer on Telemancer: September's Story.
+          <br>
+          The game is built in Unity HDRP and had a team of 40+ people.
+          <br>
+          I was responsible for the Player Systems, i.e. all of the actions and
+          abilities of the player, and relevant feedback systems.
+        </p>
+        <hr>
+        <!--Work #3-->
+        <h3 style="display:inline">La Casita Bakeshop</h3>
+        <h5 style="display:inline;float:right"><i>Mar. 2021 – Present</i></h5>
+        <p style="margin-left:32px">
+          I work at a local bakery in Richardson, working at the front of house and running delieveries.
+        </p>
+        <hr>
+        <!--Work #4-->
+        <h3 style="display:inline">Server - Olive Garden</h3>
+        <h5 style="display:inline;float:right"><i>Feb. 2020 – Sep. 2021</i></h5>
+        <p style="margin-left:32px">
+          Worked as a server at the Olive Garden in Allen, TX. Excelled at
+          helping people and being both friendly and prompt with food and
+          drinks. Gained experience working in a quick pace environment with
+          a lot of moving parts and stressful moments.
+        </p>
+        <hr>
+        <!--Work #5-->
+        <h3 style="display:inline">Academic Tutor</h3>
+        <h5 style="display:inline;float:right"><i>Oct. 2019 – Dec. 2020</i></h5>
+        <p style="margin-left:32px">
+          I worked as a paid and often unpaid tutor for some students at UTD
+          and some at Collin College in the following areas:
+          <br>&nbsp-&nbsp&nbsp
+          Animation <i>(Modeling, Scripting for Games)</i>
+          <br>&nbsp-&nbsp&nbsp
+          Coding <i>(Java, Processing, HTML / CSS)</i>
+          <br>&nbsp-&nbsp&nbsp
+          Math <i>(Calculus I, II) and Physics (Mechanics)</i>
+        </p>
+      </div>
+
+      <br>
+    </div>
+    
+    <!-- Contact Me -->
+    <div id="CM" class="w3-container page">
+      <h1 class="w3-xxxlarge">Contact Me</h1>
+      <hr>
+      <h2>Brandon Coffey</h2>
+      <hr>
+      <h2><a href="mailto: bmc939@gmail.com" target="_blank">Email</a></h2>
+      <hr>
+      <h2><a href="https://www.linkedin.com/in/brandon-coffey-36a802191/" target="_blank">LinkedIn</a></h2>
+      <hr>
+      <h2><a href="https://www.artstation.com/brandon-coffey" target="_blank">Artstation</a></h2>
+      <hr>
+      <h2><a href="https://github.com/BrandonMCoffey" target="_blank">Github</a></h2>
+      <hr>
+    </div>
+
     <!--Houdini
     <div id="HO" class="w3-container page">
       <h1>Houdini Work</h1>
@@ -164,132 +414,6 @@
       </div>
     </div>
     -->
-    
-    <!-- Demo Reel -->
-    <div id="DR" class="w3-container page">
-      <div class="w3-container w3-content w3-center" style="max-width:1200px">
-        <h2>
-          Hi there! Welcome to my portfolio!
-        </h2>
-        <p>
-          I am a hardworking UT Dallas student and programmer who strives to write
-          clean, powerful code and tools for game development. I’m eager to learn and work my skills into solid prototypes and build
-          tools alongside the designers who will use them.
-        </p>
-        <p>
-          I have a desire to enter a profession in the games industry because I have a passion for scripting in the sense of building
-          tools for designers and to create cool effects and various gameplay mechanics. What I want to do is put my skills and passion
-          into a game or idea that someone is passionate about. It might sound a little odd, as typically you hear people wanting to
-          create their own dream game, but as it stands my creativity lies in tech demos and complex tools and above all, helping
-          someone else create what they love.
-        </p>
-        <p>
-          On another note, I am a third-year university student at the University of Texas at Dallas, studying animation, game development,
-          and computer science. I was only introduced to the idea of coding two years ago, and I quickly picked it up by helping my friends
-          in their classes and starting and finishing various projects almost every week, one of which was a chess prototype in Processing,
-          built with 1.6k lines of code. From there, I decided to take a CS minor and tested out of the first course, and for the next year
-          learned C++, Java, Python, C#, HTML, and a little bit of Rust. Now, I love game development and scripting out projects in Unity
-          and a couple from scratch. I also have skills in modeling, lighting, and texturing, and am constantly learning every piece of
-          software I can get my hands on, from Houdini to Unreal Engine.
-        </p>
-      </div>
-
-      <hr>
-
-      <h1>Demo Reel</h1>
-      <video controls style="max-width:1500px;width:100%">
-        <source src="Assets/Demo_Reel.mp4" type="video/mp4" alt="Portal Demo Video">
-      </video>
-      
-      <br>
-    </div>
-    
-    <!-- Game Essay
-    <div id="GE" class="w3-container page">
-      <h1>The Influence of Earthbound (1995)</h1>
-
-      <div class="w3-container w3-content w3-left-align" style="max-width:1200px;line-height:2">
-        <p class="w3-justify" style="text-indent: 40px">
-          Earthbound, known as Mother II in Japan, redefined the very popular genre of role-playing games
-          (RPGs) with their unique, down to earth, story approach. Development of the game was a joint
-          effort between Ape Inc and HAL Laboratories, led by Shigesato Itoi. The developers’ intent with
-          this RPG was to get the player invested in a story using emotional storytelling and characters
-          with strong and quirky personalities. More specifically, Itoi “wanted to create a game
-          (EarthBound) with real characters; characters whom players would recognize in the people
-          around them” (Mato). Earthbound achieves these effects on the player through unconventional
-          level design, hidden dialog boxes, and personal narrative.
-        </p>
-        <p class="w3-justify" style="text-indent: 40px">
-          The level design in Earthbound is unconventional and diverse. The world is large with various
-          styles for each area while still having minute details. The developers focused on worldbuilding
-          more than anything else. This broadens the experience of the game and is more enjoyable across
-          different levels. Another key factor is the lack of a hub world. This way, the level feels more
-          like an open world, where the player can explore or continue the story as they like. Through all
-          the world design and artistic choices, Itoi’s goal is to make the player feel emotions, from
-          happiness and satisfaction to loneliness.
-        </p>
-        <p class="w3-justify" style="text-indent: 40px">
-          At the core of the game, there is the ever-useful text box for dialogue. This common popup is
-          manipulated and emphasized purposefully for the context of the moment, giving clearer
-          intent. On top of this, clever writing builds and strengthens an emotional
-          connection with the player. Around the time Earthbound was released, it was common to see text
-          boxes that display information or simple dialog, but Earthbound goes beyond that with quirky
-          effects and hidden dialog across the world that makes those who find it feel special. This is an
-          interesting choice, as most RPGs are more streamlined and appeal solely to fantasy, while Earthbound
-          is surreal and feels like an entirely different genre. Beyond this, there is such an incredible touch
-          of personality in the writing, where even simple stuff like saving, battle dialogue, and tips can
-          be memorable, ridiculous, or off-putting.
-        </p>
-        <p class="w3-justify" style="text-indent: 40px">
-          The designers kept the narrative directed and concise, but let it appear open to the player. This
-          choice allowed most of the game to be about  all the characters and the towns, rather than the main story,
-          The narrative has a quirky and personal appeal, leading
-          the player to become more emotionally invested into the story. This was intentional, as Itoi would
-          present odd ideas to his team and eventually “people would start chiming in with other similar ideas
-          of their own. Those links of reckless wildness are what the Mother games are built on” (Schreier).
-          Such a creative open dialogue within the developmental team made Earthbound into a unique and
-          intriguing game that became so much more than just a cut and dry RPG. This creative “wildness”
-          is directly applied to the narrative and to environmental features.
-        </p>
-        <p class="w3-justify" style="text-indent: 40px">
-          Earthbound is a unique game that has touched many hearts and inspired many other games. It “remains an
-          underappreciated video game franchise with a dedicated cult following, but with it, some of the most
-          popular indie games today would not exist” (Jensen). One game that was directly influenced by
-          Earthbound is Undertale (2015), by following the unique genre set by Earthbound. The game is about the dialogue
-          and world building more than the gameplay itself. These kinds of games are
-          an intimate experience for the player, allowing for them to invest in the immersive world presented
-          by the non-linear level design and quirky characters.
-        </p>
-      </div>
-
-      <hr>
-      <h2>Works Cited</h2>
-      <div class="w3-container w3-content w3-left-align" style="max-width:1200px;line-height:2">
-        <p>Ape Inc. and HAL Laboratory. 1995. <i>Earthbound</i> (Super Nintendo Entertainment System). Nintendo of America.</p>
-        <p>Schreier, Jason. “Earthbound, The Trippiest Game In RPG History.” <i>Kotaku</i>, 20 Apr. 2012, kotaku.com.</p>
-        <p>Mato. “Shigesato Itoi Discusses MOTHER 4.” <i>EarthBound Central</i>, 03 Apr. 2011, earthboundcentral.com</p>
-        <p>Jensen, K. Thor. “How EarthBound Changed What Role-Playing Games Could Mean.” <i>PCMAG</i>, PCMag, 10 June 2020, www.pcmag.com.</p>
-        <p>Toby Fox. 2015. <i>Undertale</i> (Windows). Toby Fox.</p>
-      </div>
-      <br>
-    </div>
-    -->
-    
-    <!-- Contact Me -->
-    <div id="CM" class="w3-container page">
-      <h1 class="w3-xxxlarge">Contact Me</h1>
-      <hr>
-      <h2>Brandon Coffey</h2>
-      <hr>
-      <h2><a href="mailto: bmc939@gmail.com" target="_blank">Email</a></h2>
-      <hr>
-      <h2><a href="https://www.linkedin.com/in/brandon-coffey-36a802191/" target="_blank">LinkedIn</a></h2>
-      <hr>
-      <h2><a href="https://www.artstation.com/brandon-coffey" target="_blank">Artstation</a></h2>
-      <hr>
-      <h2><a href="https://github.com/BrandonMCoffey" target="_blank">Github</a></h2>
-      <hr>
-    </div>
 
     <!-- End Of Sections-->
   </div>
@@ -302,6 +426,8 @@
   <div class="w3-center">
     <h3>Brandon Coffey</h3>
     <p>
+      <a href="https://github.com/BrandonMCoffey" target="_blank">Github</a>
+      &nbsp&nbsp|&nbsp&nbsp
       <a href="mailto: bmc939@gmail.com" target="_blank">Email</a>
       &nbsp&nbsp|&nbsp&nbsp
       <a href="https://www.artstation.com/brandon-coffey" target="_blank">Artstation</a>
@@ -325,10 +451,8 @@ function openPage(evt, pageName) {
     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
   }
   document.getElementById(pageName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
 }
-
-openPage(event, "VE");
+openPage(event, 'VE');
 </script>
 
 </body>
