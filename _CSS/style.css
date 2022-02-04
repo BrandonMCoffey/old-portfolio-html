@@ -6,6 +6,8 @@ html {
 }
 
 body {
+    background-color: #1e1e1e;
+    color: white;
     margin: 0;
     font-family: Verdana, sans-serif;
     font-size: 15px;
