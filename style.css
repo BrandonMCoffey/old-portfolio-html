@@ -50,6 +50,7 @@ a {
 }
 
 .title1 {
+    /* font-size: 7vw */
     font-size: 70px;
     font-weight: bold
 }
@@ -67,27 +68,8 @@ a {
 }
 
 
-/* Dropdown */
-
-.dropdown-hover {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-}
-
-.dropdown-hover:hover .dropdown-content {
-    display: block;
-}
-
-
 /* Button */
 
-.dropdown-button,
 .button {
     background-color: #208da6;
     color: #fff;
@@ -101,14 +83,6 @@ a {
     text-decoration: none;
 }
 
-.dropdown-button {
-    width: calc(100% - 16px);
-    text-align: left;
-    word-wrap: break-word;
-    padding-right: 0px;
-}
-
-.dropdown-button:hover,
 .button:hover {
     color: #fff;
     background-color: #37b6d4
@@ -125,7 +99,8 @@ a {
     margin: auto
 }
 
-.showcase-box {
+.showcase-box,
+.showcase-box-r {
     max-width: 90%;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -165,12 +140,6 @@ a {
     display: inline-block;
 }
 
-.third {
-    width: 30.333%;
-    vertical-align: top;
-    display: inline-block;
-}
-
 .showcase-small {
     width: 90%;
     max-width: 850px;
@@ -186,18 +155,13 @@ a {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.showcase-item {
-    width: 100%;
-    padding: 10px;
-}
-
 
 /* Resume */
 
 .text-large {
     margin: auto;
     max-width: 750px;
-    width: 80%;
+    width: 90%;
     text-align: left;
 }
 
@@ -209,4 +173,45 @@ a {
 
 .work-desc {
     margin-left: 32px;
+}
+
+
+/* Mobile Mode */
+
+@media (max-width: 1170px) {
+    .title1 {
+        font-size: 50px;
+    }
+    .title2 {
+        font-size: 20px;
+    }
+    .half {
+        width: 100%;
+    }
+    .showcase-box-r {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .showcase-seperator {
+        width: 0%;
+    }
+    .text-box {
+        width: 100%;
+    }
+    .image-box,
+    .video-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .title1 {
+        font-size: 30px;
+    }
+    .title2 {
+        font-size: 18px;
+    }
+    .half-card {
+        width: 100%;
+    }
 }
