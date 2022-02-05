@@ -1,75 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <title>Brandon Coffey | Portfolio</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../_CSS/style.css" />
+<title>Brandon Coffey | Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../_CSS/style.css" />
 
-  <body>
-    <!-- Header -->
-    <header class="header-box">
-      <div style="margin-left: 10%;">
-        <p class="title2">Brandon Coffey</p>
-        <p class="title1">Game Dev Portfolio</p>
-      </div>
-    </header>
-
-    <!-- Section Buttons -->
-    <div class="row">
-      <div class="dropdown-hover">
-        <button class="button pageButton" onclick="openPage(event,'GD')">
-          Game Development
-        </button>
-        <div class="dropdown-content bar-block">
-          <button
-            class="bar-item button pageButton"
-            onclick="openPage(event,'DR')"
-          >
-            Demo Reel
-          </button>
-          <button
-            class="bar-item button pageButton"
-            onclick="openPage(event,'VE')"
-          >
-            Virtual Environments
-          </button>
-        </div>
-      </div>
-      <button class="button pageButton" onclick="openPage(event,'TP')">
-        Team Projects
-      </button>
-      <button class="button pageButton" onclick="openPage(event,'RM')">
-        Resume
-      </button>
-      <button class="button pageButton" onclick="openPage(event,'CM')">
-        Contact Me
-      </button>
+<body>
+  <!-- Header -->
+  <header class="header-box">
+    <div style="margin-left: 10%;">
+      <p class="title2">Brandon Coffey</p>
+      <p class="title1">Game Dev Portfolio</p>
     </div>
+  </header>
 
-    <!-- CONTENT -->
+  <!-- Section Buttons -->
+  <div class="row">
+    <div class="dropdown-hover">
+      <a href="../Animation.html" class="button">Animation</a>
+      <div class="dropdown-content">
+        <a href="../Animation/Creation.html" class="dropdown-button">Creation</a>
+        <a href="../Animation/Houdini.html" class="dropdown-button">Houdini</a>
+      </div>
+    </div>
+    <div class="dropdown-hover">
+      <a href="../Environments.html" class="button">Environments</a>
+      <div class="dropdown-content">
+        <a href="../Environments/Maya.html" class="dropdown-button">Maya</a>
+        <a href="../Environments/Unity.html" class="dropdown-button">Unity</a>
+      </div>
+    </div>
+    <div class="dropdown-hover">
+      <a href="../GameDev.html" class="button">Game Development</a>
+      <div class="dropdown-content">
+        <a href="../GameDev/Unity.html" class="dropdown-button">Unity (Solo)</a>
+        <a href="../GameDev/UnityTeam.html" class="dropdown-button">Unity (Team)</a>
+      </div>
+    </div>
+    <a href="../Resume.html" class="button">Resume</a>
+  </div>
 
-    <hr />
+  <!-- CONTENT -->
 
-    <!-- Footer -->
-    <footer>
-      <h3>Brandon Coffey</h3>
+  <h1>Maya Environments</h1>
+  <hr />
+
+  <div class="showcase-box">
+    <a href="../_Assets/Classroom_DarkScene.jpg" target="_blank">
+      <img class="image-box" src="../_Assets/Classroom_DarkScene.jpg" alt="Classroom Environment" />
+    </a>
+    <div class="showcase-seperator"></div>
+    <div class="text-box">
+      <h2>Old Classroom</h2>
+      <h4>Prodedural Surfacing (Maya)</h4>
       <p>
-        <a href="https://github.com/BrandonMCoffey" target="_blank">Github</a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a href="mailto: bmc939@gmail.com" target="_blank">Email</a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a href="https://www.artstation.com/brandon-coffey" target="_blank">
-          Artstation
-        </a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a
-          href="https://www.linkedin.com/in/brandon-coffey-36a802191/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
+        An old classroom that was long abandoned and left to wither and
+        rust. Everything you see in this environment is surfaced and
+        textured procedurally, with the use of only two textures, one for
+        scratches and one for the tiles on the floor. This scene was set up
+        and lit in Autodesk Maya with the use of Arnold shaders, though the
+        ideas behind procedural shading can be used in Houdini, Unity, or
+        Unreal as well. To further this, I am in the process of learning
+        Shader Graph and VFX Graph in Unity HDRP. A breakdown of the wood
+        shader is shown below:
       </p>
-      <br />
-    </footer>
-  </body>
+
+      <a href="https://www.artstation.com/artwork/48WyL8" target="_blank">
+        View on Artstation
+      </a>
+
+      <p></p>
+
+      <a href="../_Assets/Classroom_WoodShader.PNG" target="_blank">
+        <img src="../_Assets/Classroom_WoodShader.PNG" alt="Classroom Environment Wood Shader" style="max-width: 1500px; width: 100%;" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <br />
+  <hr />
+  <footer>
+    <h3>Brandon Coffey</h3>
+    <p>
+      <a href="https://github.com/BrandonMCoffey" target="_blank">Github</a>
+      &nbsp&nbsp|&nbsp&nbsp
+      <a href="mailto: bmc939@gmail.com" target="_blank">Email</a>
+      &nbsp&nbsp|&nbsp&nbsp
+      <a href="https://www.artstation.com/brandon-coffey" target="_blank">
+        Artstation
+      </a>
+      &nbsp&nbsp|&nbsp&nbsp
+      <a href="https://www.linkedin.com/in/brandon-coffey-36a802191/" target="_blank">
+        LinkedIn
+      </a>
+    </p>
+    <br />
+  </footer>
+</body>
+
 </html>

@@ -1,642 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <title>Brandon Coffey | Portfolio</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="_CSS/style.css" />
+<title>Brandon Coffey | Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="_CSS/style.css" />
 
-  <body>
+<body>
     <!-- Header -->
     <header class="header-box">
-      <div style="margin-left: 10%;">
-        <p class="title2">Brandon Coffey</p>
-        <p class="title1">Game Dev Portfolio</p>
-      </div>
+        <div style="margin-left: 10%;">
+            <p class="title2">Brandon Coffey</p>
+            <p class="title1">Game Dev Portfolio</p>
+        </div>
     </header>
 
     <!-- Section Buttons -->
     <div class="row">
-      <div class="dropdown-hover">
-        <button class="button pageButton" onclick="openPage(event,'GD')">
-          Game Development
-        </button>
-        <div class="dropdown-content bar-block">
-          <button
-            class="bar-item button pageButton"
-            onclick="openPage(event,'DR')"
-          >
-            Demo Reel
-          </button>
-          <button
-            class="bar-item button pageButton"
-            onclick="openPage(event,'VE')"
-          >
-            Virtual Environments
-          </button>
+        <div class="dropdown-hover">
+            <a href="Animation.html" class="button">Animation</a>
+            <div class="dropdown-content">
+                <a href="Animation/Creation.html" class="dropdown-button">Creation</a>
+                <a href="Animation/Houdini.html" class="dropdown-button">Houdini</a>
+            </div>
         </div>
-      </div>
-      <button class="button pageButton" onclick="openPage(event,'TP')">
-        Team Projects
-      </button>
-      <button class="button pageButton" onclick="openPage(event,'RM')">
-        Resume
-      </button>
-      <button class="button pageButton" onclick="openPage(event,'CM')">
-        Contact Me
-      </button>
+        <div class="dropdown-hover">
+            <a href="Environments.html" class="button">Environments</a>
+            <div class="dropdown-content">
+                <a href="Environments/Maya.html" class="dropdown-button">Maya</a>
+                <a href="Environments/Unity.html" class="dropdown-button">Unity</a>
+            </div>
+        </div>
+        <div class="dropdown-hover">
+            <a href="GameDev.html" class="button">Game Development</a>
+            <div class="dropdown-content">
+                <a href="GameDev/Unity.html" class="dropdown-button">Unity (Solo)</a>
+                <a href="GameDev/UnityTeam.html" class="dropdown-button">Unity (Team)</a>
+            </div>
+        </div>
+        <a href="Resume.html" class="button">Resume</a>
     </div>
 
-    <!-- Demo Reel -->
-    <div id="DR" class="page">
-      <div style="margin: auto; max-width: 1200px;">
-        <h2>
-          Hi there! Welcome to my portfolio!
-        </h2>
-        <p>
-          I am a hardworking UT Dallas student and programmer who strives to
-          write clean, powerful code and tools for game development. I’m eager
-          to learn and work my skills into solid prototypes and build tools
-          alongside the designers who will use them.
-        </p>
-        <p>
-          I have a desire to enter a profession in the games industry because I
-          have a passion for scripting in the sense of building tools for
-          designers and to create cool effects and various gameplay mechanics.
-          What I want to do is put my skills and passion into a game or idea
-          that someone is passionate about. It might sound a little odd, as
-          typically you hear people wanting to create their own dream game, but
-          as it stands my creativity lies in tech demos and complex tools and
-          above all, helping someone else create what they love.
-        </p>
-        <p>
-          On another note, I am a third-year university student at the
-          University of Texas at Dallas, studying animation, game development,
-          and computer science. I was only introduced to the idea of coding two
-          years ago, and I quickly picked it up by helping my friends in their
-          classes and starting and finishing various projects almost every week,
-          one of which was a chess prototype in Processing, built with 1.6k
-          lines of code. From there, I decided to take a CS minor and tested out
-          of the first course, and for the next year learned C++, Java, Python,
-          C#, HTML, and a little bit of Rust. Now, I love game development and
-          scripting out projects in Unity and a couple from scratch. I also have
-          skills in modeling, lighting, and texturing, and am constantly
-          learning every piece of software I can get my hands on, from Houdini
-          to Unreal Engine.
-        </p>
-      </div>
+    <!-- CONTENT -->
 
-      <hr />
-
-      <h1>Demo Reel</h1>
-      <video controls style="max-width: 1500px; width: 100%;">
-        <source
-          src="_Assets/Demo_Reel.mp4"
-          type="video/mp4"
-          alt="Portal Demo Video"
-        />
-      </video>
-
-      <br />
-      <br />
-    </div>
-
-    <!-- Virtual Environments -->
-    <div id="VE" class="page">
-      <h1>Virtual Environments</h1>
-      <hr />
-
-      <div class="showcase-box">
-        <video class="video-box" controls>
-          <source
-            src="_Assets/OutdoorsScene.mp4"
-            type="video/mp4"
-            alt="Portal Demo Video"
-          />
-        </video>
-        <div class="showcase-seperator"></div>
+    <div class="showcase-box">
         <div class="text-box">
-          <h2>Forest Environment</h2>
-          <h4>Virtual Environment (Unity)</h4>
-          <p>
-            A lamp-lit forest trail in the late afternoon crossing over a river
-            into a clearing littered with flowers and grass. This was an
-            environment that I created in one month for a class, where
-            everything is modeled and textured and lit by myself. Although most
-            of what I do involves code, it is useful to know the rest of the
-            pipeline and be capable of doing a first pass on everything from
-            models to gameplay.
-          </p>
-
-          <a href="https://www.artstation.com/artwork/g2vdVK" target="_blank">
-            View on Artstation
-          </a>
-        </div>
-      </div>
-
-      <h2>Some examples of the _Assets in the above work</h2>
-
-      <div class="showcase-row">
-        <a href="_Assets/OutdoorsScene_Grass.png" target="_blank">
-          <img
-            class="half"
-            src="_Assets/OutdoorsScene_Grass.png"
-            alt="Outdoors Environment Grass Textures"
-          />
-        </a>
-
-        <div class="showcase-seperator"></div>
-        <a href="_Assets/OutdoorsScene_LampPost.png" target="_blank">
-          <img
-            class="half"
-            src="_Assets/OutdoorsScene_LampPost.png"
-            alt="Outdoors Environment Lamp Post Textures"
-          />
-        </a>
-      </div>
-      <hr />
-
-      <div class="showcase-box">
-        <a href="_Assets/Classroom_DarkScene.jpg" target="_blank">
-          <img
-            class="image-box"
-            src="_Assets/Classroom_DarkScene.jpg"
-            alt="Classroom Environment"
-          />
-        </a>
-        <div class="showcase-seperator"></div>
-        <div class="text-box">
-          <h2>Old Classroom</h2>
-          <h4>Prodedural Surfacing (Maya)</h4>
-          <p>
-            An old classroom that was long abandoned and left to wither and
-            rust. Everything you see in this environment is surfaced and
-            textured procedurally, with the use of only two textures, one for
-            scratches and one for the tiles on the floor. This scene was set up
-            and lit in Autodesk Maya with the use of Arnold shaders, though the
-            ideas behind procedural shading can be used in Houdini, Unity, or
-            Unreal as well. To further this, I am in the process of learning
-            Shader Graph and VFX Graph in Unity HDRP. A breakdown of the wood
-            shader is shown below:
-          </p>
-
-          <a href="https://www.artstation.com/artwork/48WyL8" target="_blank">
-            View on Artstation
-          </a>
-
-          <p></p>
-
-          <a href="_Assets/Classroom_WoodShader.PNG" target="_blank">
-            <img
-              src="_Assets/Classroom_WoodShader.PNG"
-              alt="Classroom Environment Wood Shader"
-              style="max-width: 1500px; width: 100%;"
-            />
-          </a>
-        </div>
-      </div>
-
-      <br />
-      <br />
-    </div>
-
-    <!-- Game Development -->
-    <div id="GD" class="page">
-      <h1>Game Development (Unity)</h1>
-      <hr />
-
-      <div class="showcase-box">
-        <video class="video-box" controls>
-          <source
-            src="_Assets/Portal_Gameplay.mp4"
-            type="video/mp4"
-            alt="Portal Demo Video"
-          />
-        </video>
-        <div class="showcase-seperator"></div>
-        <div class="text-box">
-          <h2>Portal Recreation Demo</h2>
-          <p>
-            Portal was a fantastic game and followed by the masterpiece that is
-            portal 2, and I wanted to look a little deeper into how it was made.
-            The portal itself has multiple approaches involving camera effects,
-            room duplicates, or raycasts, and each has their own ups and downs.
-            I decided on camera effects, because they were the easiest to
-            implement in an intuitive way. Each portal has its own second camera
-            that renders the scene and passes the ‘image texture’ to the other
-            portal. The effect worked amazingly, after a good amount of polish,
-            and I would love to dive into the other methods at some point too.
-          </p>
-
-          <p>
-            <a href="https://www.artstation.com/artwork/Xnv0NR" target="_blank">
-              View on Artstation
-            </a>
-            &nbsp&nbsp|&nbsp&nbsp
-            <a
-              href="https://github.com/BrandonMCoffey/Portal-TechDemo"
-              target="_blank"
-            >
-              Github Repository
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="showcase-box">
-        <div class="text-box">
-          <h2>Tank Boss Battle</h2>
-          <p>
-            A boss battle! With tanks! What could be better? I've long been a
-            fan of an old and simple game called Wii Play Tanks, and wanted to
-            implement some of those ideas into a game. The perfect opportunity
-            came as a university project, where we had to build a simple tank
-            controller and a boss that could move and attack. I expanded on this
-            idea and built a simple intro cutscene to build up the boss and gave
-            him multiple stages to make it more progressive. On a more technical
-            level, I implemented the observer pattern for more efficient game
-            references, the state pattern for cleaner AI, and object pooling
-            (for both sound effects and the bullets) for better performance.
-          </p>
-
-          <p>
-            <a href="https://www.artstation.com/artwork/9mG1bW" target="_blank">
-              View on Artstation
-            </a>
-            &nbsp&nbsp|&nbsp&nbsp
-            <a
-              href="https://github.com/BrandonMCoffey/Tank-Boss-Battle"
-              target="_blank"
-            >
-              Github Repository
-            </a>
-          </p>
+            <h2>
+                Hi there! Welcome to my portfolio!
+            </h2>
+            <p>
+                I am a hardworking UT Dallas student and programmer who strives to
+                write clean, powerful code and tools for game development. I’m eager
+                to learn and work my skills into solid prototypes and build tools
+                alongside the designers who will use them.
+            </p>
+            <p>
+                I have a desire to enter a profession in the games industry because I
+                have a passion for scripting in the sense of building tools for
+                designers and to create cool effects and various gameplay mechanics.
+                What I want to do is put my skills and passion into a game or idea
+                that someone is passionate about. It might sound a little odd, as
+                typically you hear people wanting to create their own dream game, but
+                as it stands my creativity lies in tech demos and complex tools and
+                above all, helping someone else create what they love.
+            </p>
+            <p>
+                On another note, I am a third-year university student at the
+                University of Texas at Dallas, studying animation, game development,
+                and computer science. I was only introduced to the idea of coding two
+                years ago, and I quickly picked it up by helping my friends in their
+                classes and starting and finishing various projects almost every week,
+                one of which was a chess prototype in Processing, built with 1.6k
+                lines of code. From there, I decided to take a CS minor and tested out
+                of the first course, and for the next year learned C++, Java, Python,
+                C#, HTML, and a little bit of Rust. Now, I love game development and
+                scripting out projects in Unity and a couple from scratch. I also have
+                skills in modeling, lighting, and texturing, and am constantly
+                learning every piece of software I can get my hands on, from Houdini
+                to Unreal Engine.
+            </p>
         </div>
         <div class="showcase-seperator"></div>
         <video class="video-box" controls>
-          <source
-            src="_Assets/TankGame_Gameplay.mp4"
-            type="video/mp4"
-            alt="Tank Boss Battle Gameplay Video"
-          />
+            <source src="_Assets/Demo_Reel.mp4" type="video/mp4" alt="Demo Reel Video" />
         </video>
-      </div>
     </div>
-
-    <!-- Team Projects -->
-    <div id="TP" class="page">
-      <h1>Team Projects</h1>
-      <hr />
-
-      <div class="showcase-box">
-        <video class="video-box" controls>
-          <source
-            src="_Assets/Telemancer_Demo.mp4"
-            type="video/mp4"
-            alt="Telemancer Demo Video"
-          />
-        </video>
-        <div class="showcase-seperator"></div>
-        <div class="text-box">
-          <h2>Telemancer: Septembers Story</h2>
-          <h4>Programmer (Unity)</h4>
-          <p>
-            Telemancer: September's Story is part of the course, Game Lab, at
-            UTD. Me and 40+ students spent Fall 2021 designing and developing
-            the game, from the story to the art to the programming. I was in
-            charge of Player Systems, which revolves around the the actions that
-            a player can take and how they interact with the world. My work
-            included the player's abilities, implementing animations, and
-            setting up feedback and state systems.
-          </p>
-
-          <a
-            href="https://github.com/metalac190/GameLab_Telemancer"
-            target="_blank"
-          >
-            Github Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="showcase-small">
-        <div class="half-card">
-          <div style="padding-left: 20px; text-align: left;">
-            <h4>Fellow Programmers</h4>
-            <p>
-              <a
-                href="https://andrewrsylvester.wixsite.com/portfolio"
-                target="_blank"
-              >
-                Andrew Sylvester
-              </a>
-            </p>
-            <p>
-              <a href="https://sparkfire.dev/" target="_blank">Bill Dang</a>
-            </p>
-            <p>
-              <a
-                href="https://brett-austin.wixsite.com/portfolio"
-                target="_blank"
-              >
-                Brett Austin
-              </a>
-            </p>
-            <p>Henry Werner</p>
-            <p>
-              <a href="https://noah-sims.wixsite.com/portfolio" target="_blank">
-                Noah Sims
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://www.xanderyoussef.com/index.html"
-                target="_blank"
-              >
-                Xander Youssef
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="showcase-seperator"></div>
-        <div class="half-card">
-          <div style="padding-left: 20px; text-align: left;">
-            <h4>Fellow Artists and Designers</h4>
-            <p>
-              <a
-                href="https://cameron-meyer.wixsite.com/portfolio"
-                target="_blank"
-              >
-                Cameron Meyer
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://www.sammymahmoudi.com/other-interests.html"
-                target="_blank"
-              >
-                Sammy Mahmoudi
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://greensheridan2.wixsite.com/sheridangreen"
-                target="_blank"
-              >
-                Sheridan Green
-              </a>
-            </p>
-            <p>Jacob Reeder</p>
-            <p>And many more</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Resume -->
-      <div id="RM" class="page">
-        <h1>
-          <a href="_Assets/Resume.pdf" target="_blank">Resume PDF</a>
-        </h1>
-
-        <hr />
-        <br />
-
-        <div style="margin: auto; max-width: 512px;">
-          <img
-            src="_Assets/Profile_Picture.png"
-            alt="Profile Picture"
-            style="width: 49%;"
-          />
-        </div>
-
-        <br />
-
-        <div style="margin: auto; max-width: 800px;">
-          <h4>
-            Howdy! I'm Brandon Coffey, a skilled Unity developer with a passion
-            for game development and programming. I have a broad understanding
-            of the Animation and Games pipelines, with 6+ years of experience in
-            Maya and plenty of soft skills from being an Eagle Scout and a
-            restaurant server.
-          </h4>
-        </div>
-
-        <hr />
-
-        <div class="showcase-small">
-          <div class="half-card">
-            <h3 style="text-align: center;">Coding Languages</h3>
-            <div style="width: 50%; float: left;">
-              <h4>Skilled</h4>
-              <p>C#</p>
-              <p>C++</p>
-              <p>Java</p>
-              <p>SDL Library</p>
-            </div>
-            <div style="width: 50%; float: right;">
-              <h4>Qualified</h4>
-              <p>Python</p>
-              <p>HTML</p>
-              <p>Rust</p>
-            </div>
-          </div>
-          <div class="showcase-seperator"></div>
-          <div class="half-card">
-            <h3 style="text-align: center;">Tools and Software</h3>
-            <div style="width: 50%; float: left;">
-              <h4>Skilled</h4>
-              <p>Unity</p>
-              <p>Substance Painter</p>
-              <p>Maya</p>
-              <p>Photoshop</p>
-            </div>
-            <div style="width: 50%; float: right;">
-              <h4>Qualified</h4>
-              <p>Unreal Engine</p>
-              <p>Houdini</p>
-              <p>After Effects</p>
-              <p>Shotgrid</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin: auto; text-align: left; max-width: 400px;">
-          <h3 style="text-align: center;">Education</h3>
-          <h4>The University of Texas at Dallas</h4>
-          <p>
-            B. A. of Arts, Techonology, and Emerging Communications - Animation
-            and Games
-          </p>
-          <p>Minor in Computer Science</p>
-          <h4>Allen High School</h4>
-        </div>
-
-        <hr />
-
-        <div style="margin: auto; text-align: left; max-width: 600px;">
-          <h2 style="text-align: center;">Work Experience</h2>
-          <!--Work #1-->
-          <h3 style="display: inline;">SGDA Club Officer</h3>
-          <h5 style="display: inline; float: right;">
-            <i>Nov. 2021 - Present</i>
-          </h5>
-          <p style="margin-left: 32px;">
-            Student Game Developer Alliance Club at UTD
-          </p>
-          <hr />
-          <!--Work #2-->
-          <h3 style="display: inline;">Programmer - Telemancer</h3>
-          <h5 style="display: inline; float: right;">
-            <i>Sep. 2021 - Present</i>
-          </h5>
-          <p style="margin-left: 32px;">
-            Worked as a programmer on Telemancer: September's Story.
-            <br />
-            The game is built in Unity HDRP and had a team of 40+ people.
-            <br />
-            I was responsible for the Player Systems, i.e. all of the actions
-            and abilities of the player, and relevant feedback systems.
-          </p>
-          <hr />
-          <!--Work #3-->
-          <h3 style="display: inline;">La Casita Bakeshop</h3>
-          <h5 style="display: inline; float: right;">
-            <i>Mar. 2021 – Present</i>
-          </h5>
-          <p style="margin-left: 32px;">
-            I work at a local bakery in Richardson, working at the front of
-            house and running delieveries.
-          </p>
-          <hr />
-          <!--Work #4-->
-          <h3 style="display: inline;">Server - Olive Garden</h3>
-          <h5 style="display: inline; float: right;">
-            <i>Feb. 2020 – Sep. 2021</i>
-          </h5>
-          <p style="margin-left: 32px;">
-            Worked as a server at the Olive Garden in Allen, TX. Excelled at
-            helping people and being both friendly and prompt with food and
-            drinks. Gained experience working in a quick pace environment with a
-            lot of moving parts and stressful moments.
-          </p>
-          <hr />
-          <!--Work #5-->
-          <h3 style="display: inline;">Academic Tutor</h3>
-          <h5 style="display: inline; float: right;">
-            <i>Oct. 2019 – Dec. 2020</i>
-          </h5>
-          <p style="margin-left: 32px;">
-            I worked as a paid and often unpaid tutor for some students at UTD
-            and some at Collin College in the following areas:
-            <br />
-            &nbsp-&nbsp&nbsp Animation
-            <i>(Modeling, Scripting for Games)</i>
-            <br />
-            &nbsp-&nbsp&nbsp Coding
-            <i>(Java, Processing, HTML / CSS)</i>
-            <br />
-            &nbsp-&nbsp&nbsp Math
-            <i>(Calculus I, II) and Physics (Mechanics)</i>
-          </p>
-        </div>
-
-        <br />
-      </div>
-
-      <!-- Contact Me -->
-      <div id="CM" class="page">
-        <h1 style="font-size: 50px;">Contact Me</h1>
-        <hr />
-        <h2>Brandon Coffey</h2>
-        <hr />
-        <h2><a href="mailto: bmc939@gmail.com" target="_blank">Email</a></h2>
-        <hr />
-        <h2>
-          <a
-            href="https://www.linkedin.com/in/brandon-coffey-36a802191/"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-        </h2>
-        <hr />
-        <h2>
-          <a href="https://www.artstation.com/brandon-coffey" target="_blank">
-            Artstation
-          </a>
-        </h2>
-        <hr />
-        <h2>
-          <a href="https://github.com/BrandonMCoffey" target="_blank">Github</a>
-        </h2>
-        <hr />
-      </div>
-    </div>
-
-    <!--Houdini
-  <div id="HO">
-    <h1>Houdini Work</h1>
-    <hr>
-
-    <h2>Beach Render</h2>
-    <h4>Houdini - Procedural Objects and Materials</h4>
-    <img src="_Assets/Houdini_Beach.png" alt="Proceudral Objects and Material - Render" style="max-width:1500px;width:100%">
-
-    <div style="margin:auto;max-width:1200px">
-      <p>
-        One of the projects from my first class teaching Houdini. This is a render of a beach and a couple sand shells. Everything from the materials to the
-        objects is procedurally created through various nodes in Houdini.
-      </p>
-    </div>
-
-    <hr>
-
-    <h2>Catapult</h2>
-    <img src="_Assets/Houdini_Catapult.jpg" alt="Catapult" style="max-width:1500px;width:100%">
-
-    <div style="margin:auto;max-width:1200px">
-      <p>
-        A catapult! All three of these catapults are made from the same setup, with just a few sliders changed. This work demonstrates my understanding of a
-        procedural workflow in Houdini, and how to make various similar objects from one base.
-      </p>
-    </div>
-    
-    <h2>Various procedural trees</h2>
-    <img src="_Assets/Houdini_LTree.jpg" alt="L Trees" style="max-width:1500px;width:100%">
-
-    <div style="margin:auto;max-width:1200px">
-      <p>
-        A couple L trees that I created in Houdini for a class project. I explored various implementations of L trees and the effects that they could create.
-      </p>
-    </div>
-  </div>
-  -->
-
-    <!-- End Of Sections-->
-
-    <hr />
 
     <!-- Footer -->
+    <hr />
     <footer>
-      <h3>Brandon Coffey</h3>
-      <p>
-        <a href="https://github.com/BrandonMCoffey" target="_blank">Github</a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a href="mailto: bmc939@gmail.com" target="_blank">Email</a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a href="https://www.artstation.com/brandon-coffey" target="_blank">
-          Artstation
-        </a>
-        &nbsp&nbsp|&nbsp&nbsp
-        <a
-          href="https://www.linkedin.com/in/brandon-coffey-36a802191/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-      </p>
-      <br />
+        <h3>Brandon Coffey</h3>
+        <p>
+            <a href="https://github.com/BrandonMCoffey" target="_blank">Github</a>
+            &nbsp&nbsp|&nbsp&nbsp
+            <a href="mailto: bmc939@gmail.com" target="_blank">Email</a>
+            &nbsp&nbsp|&nbsp&nbsp
+            <a href="https://www.artstation.com/brandon-coffey" target="_blank">
+                Artstation
+            </a>
+            &nbsp&nbsp|&nbsp&nbsp
+            <a href="https://www.linkedin.com/in/brandon-coffey-36a802191/" target="_blank">
+                LinkedIn
+            </a>
+        </p>
+        <br />
     </footer>
-  </body>
+</body>
+
 </html>
