@@ -76,7 +76,8 @@ a {
     border: none;
     display: inline-block;
     padding: 16px;
-    padding-right: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 16px;
     vertical-align: middle;
     overflow: hidden;
@@ -205,13 +206,64 @@ a {
 }
 
 @media (max-width: 700px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 16px;
+    }
     .title1 {
         font-size: 30px;
     }
     .title2 {
         font-size: 18px;
     }
+    .button {
+        padding: 14px;
+        font-size: 14px;
+    }
+    .showcase-box,
+    .showcase-box-r {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
     .half-card {
         width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    .title1 {
+        font-size: 20px;
+    }
+    .title2 {
+        font-size: 16px;
+    }
+    .button {
+        padding: 12px;
+        font-size: 12px;
+    }
+    .showcase-box,
+    .showcase-box-r {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
