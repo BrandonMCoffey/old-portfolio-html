@@ -98,7 +98,7 @@ a {
 
 .showcase-box,
 .showcase-box-r {
-  max-width: 90%;
+  width: 80%;
   padding-top: 32px;
   padding-bottom: 32px;
   height: auto;
@@ -124,7 +124,7 @@ a {
 }
 
 .showcase-row {
-  max-width: 90%;
+  width: 90%;
   padding-bottom: 32px;
   vertical-align: top;
   text-align: left;
@@ -182,6 +182,9 @@ a {
   }
   .half {
     width: 100%;
+  }
+  .showcase-box .showcase-box-r {
+    width: 90%;
   }
   .showcase-box-r {
     display: flex;
