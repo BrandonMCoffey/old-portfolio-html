@@ -67,7 +67,7 @@ a {
 
 /* Button */
 
-.button {
+.button .button-s {
   background-color: #208da6;
   color: #fff;
   border: none;
@@ -79,6 +79,10 @@ a {
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
+}
+
+.button-s {
+  background-color: #106d99;
 }
 
 .button:hover {
