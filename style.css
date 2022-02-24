@@ -98,7 +98,7 @@ a {
 
 .showcase-box,
 .showcase-box-r {
-  width: 80%;
+  width: 85%;
   padding-top: 32px;
   padding-bottom: 32px;
   height: auto;
@@ -124,7 +124,7 @@ a {
 }
 
 .showcase-row {
-  width: 90%;
+  max-width: 90%;
   padding-bottom: 32px;
   vertical-align: top;
   text-align: left;
@@ -173,7 +173,7 @@ a {
 
 /* Mobile Mode */
 
-@media (max-width: 1170px) {
+@media (max-width: 1315px) {
   .title1 {
     font-size: 50px;
   }
