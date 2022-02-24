@@ -89,7 +89,7 @@ a {
 /* Content */
 
 .showcase-large {
-  max-width: 80%;
+  width: 80%;
   padding-top: 16px;
   padding-bottom: 16px;
   height: auto;
@@ -98,7 +98,7 @@ a {
 
 .showcase-box,
 .showcase-box-r {
-  width: 85%;
+  width: 90%;
   padding-top: 32px;
   padding-bottom: 32px;
   height: auto;
@@ -173,7 +173,7 @@ a {
 
 /* Mobile Mode */
 
-@media (max-width: 1315px) {
+@media (max-width: 1170px) {
   .title1 {
     font-size: 50px;
   }
@@ -182,9 +182,6 @@ a {
   }
   .half {
     width: 100%;
-  }
-  .showcase-box .showcase-box-r {
-    width: 90%;
   }
   .showcase-box-r {
     display: flex;
