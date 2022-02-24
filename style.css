@@ -67,8 +67,8 @@ a {
 
 /* Button */
 
-.button .button-s {
-  background-color: #208da6;
+.button {
+  background-color: #1d8299;
   color: #fff;
   border: none;
   display: inline-block;
@@ -81,13 +81,13 @@ a {
   text-decoration: none;
 }
 
-.button-s {
-  background-color: #106d99;
+.selected {
+  background-color: #1f7487;
 }
 
 .button:hover {
   color: #fff;
-  background-color: #37b6d4;
+  background-color: #1f7487;
 }
 
 /* Content */
