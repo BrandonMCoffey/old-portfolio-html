@@ -236,7 +236,7 @@ a {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   body {
     font-size: 12px;
   }
