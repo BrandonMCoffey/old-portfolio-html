@@ -3,7 +3,7 @@
 <title>Brandon Coffey | Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="CSS/style.css" />
 
 <body>
     <!-- Header -->
@@ -16,11 +16,22 @@
 
     <!-- Section Buttons -->
     <div class="row">
-        <a href="index.html" class="button">Home</a>
-        <a href="UnityGames.html" class="button">Unity Games</a>
-        <a href="Environments.html" class="button">Environments</a>
-        <a href="Houdini.html" class="button selected">Houdini</a>
-        <a href="Resume.html" class="button">Resume</a>
+        <a class="button" href="UnityGames">Unity Games</a>
+        <a class="button" href="Environments">Environments</a>
+        <div class="dropdown">
+            <button class="button-np">Other Skills</i></button>
+            <div class="dropdown-content">
+                <a class="dropdown-item button" href="Maya">Maya</a>
+                <a class="dropdown-item button selected" href="">Houdini</a>
+                <a class="dropdown-item button" href="Unity">Unity</a>
+                <a class="dropdown-item button" href="Unreal">Unreal Engine</a>
+                <a class="dropdown-item button" href="ZBrush">ZBrush</a>
+                <a class="dropdown-item button" href="Painter">Substance Painter</a>
+                <a class="dropdown-item button" href="Coding">Coding</a>
+                <a class="dropdown-item button" href="Websites">Websites</a>
+            </div>
+        </div>
+        <a class="button" href="Resume">Resume</a>
     </div>
 
     <!-- CONTENT -->
@@ -28,8 +39,8 @@
     <h1>Houdini</h1>
 
     <div class="showcase-box-r">
-        <a href="Houdini/CameraShoot.jpg" target="_blank">
-            <img class="image-box" src="Houdini/CameraShoot.jpg" alt="Camera Shoot Photo" />
+        <a href="https://www.artstation.com/artwork/4XRn5n" target="_blank">
+            <img class="image-box" src="Images/CameraShoot.jpg" alt="Camera Shoot Photo" />
         </a>
         <div class="showcase-seperator"></div>
         <div class="text-box">
@@ -54,7 +65,7 @@
         </div>
         <div class="showcase-seperator"></div>
         <video class="video-box" controls muted autoplay loop>
-            <source src="Houdini/AbstractGeometry.mp4" type="video/mp4" alt="Houdini Geometry Video" />
+            <source src="Videos/AbstractGeometry.mp4" type="video/mp4" alt="Houdini Geometry Video" />
         </video>
     </div>
 

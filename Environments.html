@@ -3,7 +3,7 @@
 <title>Brandon Coffey | Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="CSS/style.css" />
 
 <body>
     <!-- Header -->
@@ -16,11 +16,22 @@
 
     <!-- Section Buttons -->
     <div class="row">
-        <a href="index.html" class="button">Home</a>
-        <a href="UnityGames.html" class="button">Unity Games</a>
-        <a href="Environments.html" class="button selected">Environments</a>
-        <a href="Houdini.html" class="button">Houdini</a>
-        <a href="Resume.html" class="button">Resume</a>
+        <a class="button" href="UnityGames">Unity Games</a>
+        <a class="button selected" href="">Environments</a>
+        <div class="dropdown">
+            <button class="button-np">Other Skills</i></button>
+            <div class="dropdown-content">
+                <a class="dropdown-item button" href="Maya">Maya</a>
+                <a class="dropdown-item button" href="Houdini">Houdini</a>
+                <a class="dropdown-item button" href="Unity">Unity</a>
+                <a class="dropdown-item button" href="Unreal">Unreal Engine</a>
+                <a class="dropdown-item button" href="ZBrush">ZBrush</a>
+                <a class="dropdown-item button" href="Painter">Substance Painter</a>
+                <a class="dropdown-item button" href="Coding">Coding</a>
+                <a class="dropdown-item button" href="Websites">Websites</a>
+            </div>
+        </div>
+        <a class="button" href="Resume">Resume</a>
     </div>
 
     <!-- CONTENT -->
@@ -29,7 +40,7 @@
 
     <div class="showcase-box-r">
         <video class="video-box" controls muted autoplay loop>
-            <source src="Environments/ForestTrail.mp4" type="video/mp4" alt="Forest Trail Video" />
+            <source src="Videos/ForestTrail.mp4" type="video/mp4" alt="Forest Trail Video" />
         </video>
         <div class="showcase-seperator"></div>
         <div class="text-box">
@@ -39,7 +50,7 @@
                 A lamp-lit forest trail in the late afternoon crossing over a river into a clearing littered with flowers and grass. This was an environment
                 that I created in one month for a class, where everything is modeled, textured and lit by myself.
             </p>
-            <a href="https://www.artstation.com/artwork/g2vdVK">View More Details</a>
+            <a href="https://www.artstation.com/artwork/g2vdVK" target="_blank">View More Details</a>
         </div>
     </div>
 
@@ -51,17 +62,17 @@
                 Home Sweet Home is a Work In Progress Unreal Engine Environment that closely follows a reference art by Cay C. See the link below for more
                 details.
             </p>
-            <a href="https://www.artstation.com/artwork/klzv3A">View More Details</a>
+            <a href="https://www.artstation.com/artwork/klzv3A" target="_blank">View More Details</a>
         </div>
         <div class="showcase-seperator"></div>
         <a href="https://www.artstation.com/artwork/klzv3A" target="_blank">
-            <img class="image-box" src="Environments/HomeSweetHome_Key.png" alt="Photo" />
+            <img class="image-box" src="Images/HomeSweetHome.jpg" alt="Photo" />
         </a>
     </div>
 
     <div class="showcase-box-r">
         <a href="https://www.artstation.com/artwork/48WyL8" target="_blank">
-            <img class="image-box" src="Environments/OldClassroom.jpg" alt="Classroom Environment" />
+            <img class="image-box" src="Images/OldClassroom.jpg" alt="Classroom Environment" />
         </a>
         <div class="showcase-seperator"></div>
         <div class="text-box">
@@ -72,13 +83,13 @@
                 procedurally through Arnold. There are two textures used to drive the procedural texturing, one for scratches and one for the tiles in the
                 floor. Everything was set up and rendered in Autodesk Mays with Arnold.
             </p>
-            <a href="https://www.artstation.com/artwork/48WyL8">View More Details</a>
+            <a href="https://www.artstation.com/artwork/48WyL8" target="_blank">View More Details</a>
         </div>
     </div>
 
     <!-- Footer -->
-    <br />
-    <hr />
+    <br>
+    <hr>
     <footer>
         <h3>Brandon Coffey</h3>
         <p>
@@ -91,7 +102,7 @@
                 LinkedIn
             </a>
         </p>
-        <br />
+        <br>
     </footer>
 </body>
 

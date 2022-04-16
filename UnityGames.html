@@ -3,7 +3,7 @@
 <title>Brandon Coffey | Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="CSS/style.css" />
 
 <body>
     <!-- Header -->
@@ -16,11 +16,22 @@
 
     <!-- Section Buttons -->
     <div class="row">
-        <a href="index.html" class="button">Home</a>
-        <a href="UnityGames.html" class="button selected">Unity Games</a>
-        <a href="Environments.html" class="button">Environments</a>
-        <a href="Houdini.html" class="button">Houdini</a>
-        <a href="Resume.html" class="button">Resume</a>
+        <a class="button selected" href="">Unity Games</a>
+        <a class="button" href="Environments">Environments</a>
+        <div class="dropdown">
+            <button class="button-np">Other Skills</i></button>
+            <div class="dropdown-content">
+                <a class="dropdown-item button" href="Maya">Maya</a>
+                <a class="dropdown-item button" href="Houdini">Houdini</a>
+                <a class="dropdown-item button" href="Unity">Unity</a>
+                <a class="dropdown-item button" href="Unreal">Unreal Engine</a>
+                <a class="dropdown-item button" href="ZBrush">ZBrush</a>
+                <a class="dropdown-item button" href="Painter">Substance Painter</a>
+                <a class="dropdown-item button" href="Coding">Coding</a>
+                <a class="dropdown-item button" href="Websites">Websites</a>
+            </div>
+        </div>
+        <a class="button" href="Resume">Resume</a>
     </div>
 
     <!-- CONTENT -->
@@ -29,7 +40,7 @@
 
     <div class="showcase-box-r">
         <video class="video-box" controls muted autoplay>
-            <source src="UnityGames/Telemancer_Trailer.mp4" type="video/mp4" alt="Telemancer Trailer" />
+            <source src="Videos/Telemancer_Trailer.mp4" type="video/mp4" alt="Telemancer Trailer" />
         </video>
         <div class="showcase-seperator"></div>
         <div class="text-box">
@@ -39,7 +50,7 @@
                 Telemancer: September's Story is a project from the Game Lab at the University of Texas at Dallas. With a team of 40+ people, I worked as a
                 programmer to build various player systems, involving abilities, animations, feedback, and settings.
             </p>
-            <a href="https://atec-animgames.com/game-lab">
+            <a href="https://atec-animgames.com/game-lab" target="_blank">
                 View More Details
             </a>
             &nbsp&nbsp|&nbsp&nbsp
@@ -69,13 +80,13 @@
         </div>
         <div class="showcase-seperator"></div>
         <video class="video-box" controls muted autoplay>
-            <source src="UnityGames/TerraformingMars_Gameplay.mp4" type="video/mp4" alt="Terraforming Mars Gameplay Video" />
+            <source src="Videos/TerraformingMars.mp4" type="video/mp4" alt="Terraforming Mars Gameplay Video" />
         </video>
     </div>
 
     <div class="showcase-box-r">
         <video class="video-box" controls muted autoplay>
-            <source src="UnityGames/PortalDemo.mp4" type="video/mp4" alt="Portal Demo Video" />
+            <source src="Videos/PortalDemo.mp4" type="video/mp4" alt="Portal Demo Video" />
         </video>
         <div class="showcase-seperator"></div>
         <div class="text-box">
@@ -118,7 +129,7 @@
         </div>
         <div class="showcase-seperator"></div>
         <video class="video-box" controls muted autoplay>
-            <source src="UnityGames/TankGame_Gameplay.mp4" type="video/mp4" alt="Tank Boss Battle Gameplay Video" />
+            <source src="Videos/TankBossBattle.mp4" type="video/mp4" alt="Tank Boss Battle Gameplay Video" />
         </video>
     </div>
 
