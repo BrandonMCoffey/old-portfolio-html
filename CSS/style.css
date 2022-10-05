@@ -39,6 +39,13 @@ a {
   color: inherit;
 }
 
+.hiddenlink {
+  text-decoration: none;
+}
+.hiddenlink:hover {
+  text-decoration: underline;
+}
+
 /* Header */
 
 .header-box {
@@ -93,6 +100,14 @@ a {
 .selected {
   color: #fff;
   background-color: #1f7487;
+}
+
+.gray {
+  background-color: #525252;
+}
+
+.gray-selected {
+  background-color: #414141;
 }
 
 /* Dropdowns
@@ -187,6 +202,12 @@ a {
 
 .quarter-card {
   width: 23%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.fifth-card {
+  width: 18%;
   vertical-align: top;
   display: inline-block;
 }
